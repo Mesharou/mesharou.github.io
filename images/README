@@ -1,0 +1,5 @@
+convert -resize 50% -trim Originals/rotwind_map_contours_0.01atlbig_mean2_dN50_baro_9_0_tot.png x800/rotwind_map_contours_01atlbig_mean2_dN50_baro_9_0_tot_light.png
+
+
+convert -trim Originals/nwattemp_zoom_0689_jet_light.png -fuzz 20%% -transparent White x800/nwattemp_zoom_0689_jet_light.png
+
