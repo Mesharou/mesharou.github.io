@@ -17,6 +17,10 @@
   [t1]: Activity1.pdf
 
 
+**[Activity #2 ][t2]**  
+
+  [t2]: Activity2.pdf
+
 ##  Material 
 
 ###  Code
@@ -34,10 +38,20 @@
   
 ###  Articles
 
-**[Stommel, 1948 ][a1]**  
-**[Munk, 1950 ][a2]**  
-**[Hughes and DeCuevas, 2001 ][a3]** 
+**[Stommel, 1948 ][a1]**
+
+**[Munk, 1950 ][a2]**
+
+**[Hughes and DeCuevas, 2001 ][a3]**
+
+**[Griffies et al, 2000 ][a4]**
+
+**[Shchepetkin & McWilliams, 2005 ][a5]** 
+
 
   [a1]: Stommel48.pdf
   [a2]: Munk50.pdf
   [a3]: HughesDeCuevas01.pdf
+  
+  [a4]: Griffiesetal00.pdf
+  [a5]: ShchepetkinMcWilliams05.pdf
