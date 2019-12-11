@@ -29,6 +29,12 @@
 
   [p30]: croco.tar.gz
   
+  
+**[notebook barotropic vorticity][p31]**  
+
+  [p31]: barotropic_vorticity_balance.py.ipynb
+  
+  
 ###  Doc
 
 **[Diagnostics Croco ][p31]**  
