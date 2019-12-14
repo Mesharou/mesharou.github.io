@@ -2,7 +2,7 @@
 
 #  OCEAN WAVES
 
-##  Presentations
+##  Presentations and Notes
 
 
 
@@ -29,6 +29,17 @@
 
   [c5]: 4_Ondes_2019.pdf
   
+**[Notes #1 ][n1]**  
+
+  [n1]: cours1_notes.pdf
+  
+**[Notes #2 ][n2]**  
+
+  [n2]: cours2_notes.pdf
+  
+**[Notes #3 ][n3]**  
+
+  [n3]: cours3_notes.pdf
   
 ##  Exercises
 
