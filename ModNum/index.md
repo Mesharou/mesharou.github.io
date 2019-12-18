@@ -13,7 +13,7 @@
 
 **[Presentation #2 ][p2]**  
 
-  [p2]: 1_Numerical_modeling.pdf
+  [p2]: 2_Numerical_modeling.pdf
 
 ##  Activities
 
