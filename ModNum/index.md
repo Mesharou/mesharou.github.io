@@ -10,6 +10,11 @@
   [p1]: 1_Numerical_modeling.pdf
 
 
+
+**[Presentation #2 ][p2]**  
+
+  [p2]: 1_Numerical_modeling.pdf
+
 ##  Activities
 
 **[Activity #1 ][t1]**  
@@ -20,6 +25,12 @@
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
+
+
+**[Activity #3 ][t3]**  
+
+  [t3]: Activity3.pdf
+
 
 ##  Material 
 
@@ -40,6 +51,12 @@
 **[Diagnostics Croco ][p31]**  
 
   [p31]: diagnostics_croco.pdf
+  
+
+**[Advective schemes ][p32]**  
+
+  [p32]: formation_adv_diff.pdf
+  
   
   
 ###  Articles
