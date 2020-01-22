@@ -10,10 +10,29 @@
   [p1]: 1_Numerical_modeling.pdf
 
 
-
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Numerical_modeling.pdf
+
+
+**[Presentation #3 ][p3]**  
+
+  [p3]: 3_Numerical_modeling.pdf
+
+
+
+
+**[Presentation #2 ][p2]**  
+
+  [p4]: 4_Numerical_modeling.pdf
+
+
+
+**[Presentation #2 ][p2]**  
+
+  [p5]: 5_Numerical_modeling.pdf
+
+
 
 ##  Activities
 
@@ -32,6 +51,10 @@
   [t3]: Activity3.pdf
 
 
+**[Activity #4 ][t4]**  
+
+  [t4]: Activity4.pdf
+  
 ##  Material 
 
 ###  Code
@@ -39,6 +62,11 @@
 **[CROCO ][p30]**  
 
   [p30]: croco.tar.gz
+
+**[CROCO TOOLS ][p32]**  
+
+  [p32]: croco_tools-v1.1.tar.gz
+  
   
   
 **[notebook barotropic vorticity][p31]**  
