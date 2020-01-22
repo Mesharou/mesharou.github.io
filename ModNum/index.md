@@ -59,19 +59,18 @@
 
 ###  Code
 
-**[CROCO ][p30]**  
+**[CROCO ][c30]**  
 
-  [p30]: croco.tar.gz
+  [c30]: croco.tar.gz
 
-**[CROCO TOOLS ][p32]**  
+**[CROCO TOOLS ][c32]**  
 
-  [p32]: croco_tools-v1.1.tar.gz
+  [c32]: croco_tools-v1.1.tar.gz
   
   
-  
-**[notebook barotropic vorticity][p31]**  
+**[notebook barotropic vorticity][c31]**  
 
-  [p31]: barotropic_vorticity_balance.py.ipynb
+  [c31]: barotropic_vorticity_balance.py.ipynb
   
   
 ###  Doc
