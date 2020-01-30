@@ -421,11 +421,11 @@ class Figure(object):
         z2d = getplotvar(self.plotvar)
         
         self.fig = plt.figure(figsize=(8, 8))
-        #gs1 = self.fig.add_gridspec(nrows=5, ncols=1,  wspace=0.01)
+        gs1 = self.fig.add_gridspec(nrows=5, ncols=1,  wspace=0.01)
 
-        #self.ax1 = self.fig.add_subplot(gs1[:-1, :])
+        self.ax1 = self.fig.add_subplot(gs1[:-1, :])
         #self.ax1 = self.fig.add_subplot(1, 1, 1)
-        self.ax1 = plt.subplot2grid((5,1),(0,0),rowspan=4)  
+        #self.ax1 = plt.subplot2grid((5,1),(0,0),rowspan=4)
 
         self.im = self.ax1.imshow(z2d, extent=[0, Lx, 0, Ly], cmap='RdBu_r',interpolation='nearest', origin='lower')
         if colorscheme == 'imposed':
@@ -437,9 +437,9 @@ class Figure(object):
             self.ax1.text(0.02*Lx, 0.9*Ly, 'Ro=%.2f' % rossby)
         self.ax1.text(0.02*Lx, 0.85*Ly, r'$\sqrt{gH}$=%.2f' % (np.sqrt(g*Hmax)))
         
-        #self.ax2 = self.fig.add_subplot(gs1[-1, :])
+        self.ax2 = self.fig.add_subplot(gs1[-1, :])
         #self.ax2 = self.fig.add_subplot(10, 1, 10)
-        self.ax2 = plt.subplot2grid((6,1),(-1,0))  
+        #self.ax2 = plt.subplot2grid((6,1),(-1,0))
 
         self.im2, = self.ax2.plot(xC, z2d[ny//2,:]);
         self.ax2.yaxis.set_major_formatter( NullFormatter() )
