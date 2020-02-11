@@ -74,7 +74,7 @@ def vinterp(var,z,depth,topo=None,cubic=0):
     #Cubic interpolation (see ShchepetkinMcWilliams08.pdf)
     elif cubic==1:
 
-        print 'cubic interpolation'
+        print('cubic interpolation')
 
         #find the closest level BELOW depth
         levs2=sum(z<depth)-1

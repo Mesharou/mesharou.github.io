@@ -73,6 +73,16 @@
   [c31]: barotropic_vorticity_balance.py.ipynb
   
   
+**[croco_example.ipynb][c33]**  
+
+  [c33]: croco_example.ipynb
+  
+    
+**[Python tools][c34]**  
+
+  [c34]: tools.py
+  
+  
 ###  Doc
 
 **[Diagnostics Croco ][p31]**  
