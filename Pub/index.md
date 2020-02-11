@@ -13,6 +13,14 @@
 
   [c2]: Cours/2_Scientific_paper.pdf
   
+**[#3 Scientific Paper ][c3]**  
+
+  [c3]: Cours/4_Effective_writing.pdf
+
+**[#4 Scientific Paper ][c4]**  
+
+  [c4]: Cours/5_Effective_writing.pdf
+  
   
 ##  Material (Ressources + Articles)
 
