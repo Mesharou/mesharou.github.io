@@ -33,3 +33,9 @@
 
 
   [a1]: May76.pdf
+
+
+**[Champagne, 1978 ][a2]**
+
+
+  [a2]: Champagne78.pdf
