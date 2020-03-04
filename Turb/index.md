@@ -32,8 +32,7 @@
  
 **[spectrum analysis #1 ][ac4]**  
 
-  [ac4]: spectrum_analysis.ipynb 
-  
+  [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/spectrum_analysis.ipynb  
 
 ##  Articles for oral presentation
 
