@@ -49,6 +49,13 @@
 
   [ac6]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence_ocean.ipynb  
   
+**[GS_for_turb.nc ][ac7]**  
+
+  [ac7]: http://mespages.univ-brest.fr/~gula/Turb/GS_for_turb.nc
+  
+**[Atlantic_for_turb.nc ][ac8]**  
+
+  [ac8]: http://mespages.univ-brest.fr/~gula/Turb/Atlantic_for_turb.nc
 
 ##  Articles for oral presentation
 
