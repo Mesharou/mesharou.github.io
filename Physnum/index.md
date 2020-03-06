@@ -10,8 +10,6 @@
   [p1]: TP_thermo.pdf
 
 
-##  TP
-
 
 **[script example][p2]**  
 
