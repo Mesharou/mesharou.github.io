@@ -50,27 +50,79 @@
 
 **Articles:**  
 
-For Nov. 5th:
 
-[#1][a1] - [#2][a2] - [#3][a3] - [#4][a4] - [#5][a5] - [#6][a6]
+[# E. Bent][a1] - [(Rev. 1)][r1a] - [(Rev. 2)][r1b]
 
-For Nov. 18th:
 
-[#7][a7] - [#8][a8] - [#9][a9] - [#10][a10] - [#11][a11] - [#12][a12] 
+[# C. Gaillard][a2]
+
+[# M. Reinert][a3]
+
+[# M. Humblet][a4] - [(Rev. 1)][r4a] - [(Rev. 2)][r4b] - [(Rev. 3)][r4c] - [(Rev. 4)][r4d] 
+
+[# A. L'Her][a5] - [(Rev. 1)][r5a] - [(Rev. 2)][r5b] - [(Rev. 3)][r5c] - [(Rev. 4)][r5d]  - [(Rev. 4 bis)][r5dbis] - [(Rev. 5)][r5a]
+
+[# A. Fabregas][a6] - [(Rev. 1)][r6a]
+
+[# M. Mignot][a7] - [(Rev. 1)][r7a] - [(Rev. 2)][r7b] - [(Rev. 3)][r7c]
+
+[# E. Gauvrit][a8] - [(Rev. 1)][r8a] - [(Rev. 2)][r8b] - [(Rev. 3)][r8c] - [(Rev. 4)][r8d] - [(Rev. 5)][r8e]
+
+[# M. Laval][a9] - [(Rev. 1)][r9a] - [(Rev. 2)][r9b]
+
+[# S. Bebin][a10] - [(Rev. 1)][r10a]
+
+[# E. Chamorro][a11] - [(Rev. 1)][r11a]
+
+[# I. A. Di Carlo][a12]
 
 	
-[a1]: Articles/article_bent.pdf
-[a2]: Articles/Gaillard.pdf
-[a3]: Articles/article_REINERT_Markus.pdf
-[a4]: Articles/scientific_english_Humblet_maelle.pdf
-[a5]: Articles/SE_article_Alexandre_LHER.pdf
-[a6]: Articles/Anais_Quebec_cliffs.pdf
-[a7]: Articles/Article_MIGNOT.pdf
-[a8]: Articles/article_Edouard.pdf
-[a9]: Articles/Marine_Laval.pdf
-[a10]: Articles/Eva_Chamorro.pdf
-[a11]: Articles/Stanislas_Bebin.pdf
-[a12]: Articles/Article_Isma_Abdelkader_Di_Carlo.pdf
+[a1]: Articles/Article_Bent.pdf
+[a2]: Articles/Article_Gaillard.pdf
+[a3]: Articles/Article_Reinert.pdf
+[a4]: Articles/Article_Humblet.pdf
+[a5]: Articles/Article_Lher.pdf
+[a6]: Articles/Article_Fabregas.pdf
+[a7]: Articles/Article_Mignot.pdf
+[a8]: Articles/Article_Gauvrit.pdf
+[a9]: Articles/Article_Laval.pdf
+[a10]: Articles/Article_Bebin.pdf
+[a11]: Articles/Article_Chamorro.pdf
+[a12]: Articles/Article_DiCarlo.pdf
+
+[r5a]: Articles/Review_Lher_by_Bebin.pdf
+[r5b]: Articles/Review_Lher_by_Bent.docx
+[r5c]: Articles/Review_Lher_by_Di_Carlo.pdf
+[r5d]: Articles/Review_Lher_by_Fabregas.pdf
+[r5dbis]: Articles/Review2_Lher_by_Fabregas.pdf
+[r5e]: Articles/Review_Lher_by_Humblet.odt
+
+[r10a]: Articles/Review_Bebin_by_Laval.pdf
+
+[r1a]: Articles/Review_Bent_by_Chamorro.pdf
+[r1b]: Articles/Review_Bent_by_Reinert.pdf
+
+[r11a]: Articles/Review_Chamorro_by_Gauvrit.pdf
+
+[r6a]: Articles/Review_Fabregas_by_Laval.pdf.pdf
+
+[r8a]: Articles/Review_Gauvrit_by_Chamorro.pdf
+[r8b]: Articles/Review_Gauvrit_by_DiCarlo.pdf
+[r8c]: Articles/Review_Gauvrit_by_Gaillard.docx
+[r8d]: Articles/Review_Gauvrit_by_Humblet.odt
+[r8e]: Articles/Review_Gauvrit_by_Mignot.pdf
+
+[r4a]: Articles/Review_Humblet_by_Gaillard.docx
+[r4b]: Articles/Review_Humblet_by_Gauvrit.pdf
+[r4c]: Articles/Review_Humblet_by_Lher.pdf
+[r4d]: Articles/Review_Humblet_by_Mignot.pdf
+
+[r9a]: Articles/Review_Laval_by_Bent.docx
+[r9b]: Articles/Review_Laval_by_LHer.pdf
+
+[r7a]: Articles/Review_Mignot_by_Bebin.pdf
+[r7b]: Articles/Review_Mignot_by_Fabregas.pdf
+[r7c]: Articles/Review_Mignot_by_Reinert.pdf
 
 ##  Material (Ressources + Articles)
 
