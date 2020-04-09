@@ -109,7 +109,7 @@
 [r8a]: Articles/Review_Gauvrit_by_Chamorro.pdf
 [r8b]: Articles/Review_Gauvrit_by_DiCarlo.pdf
 [r8c]: Articles/Review_Gauvrit_by_Gaillard.docx
-[r8d]: Articles/Review_Gauvrit_by_Humblet.odt
+[r8d]: Articles/Review_Gauvrit_by_Humblet.pdf
 [r8e]: Articles/Review_Gauvrit_by_Mignot.pdf
 
 [r4a]: Articles/Review_Humblet_by_Gaillard.docx
