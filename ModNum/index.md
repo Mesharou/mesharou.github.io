@@ -5,6 +5,7 @@
 ##  Presentations
 
 
+<!---
 **[Presentation #1 ][p1]**  
 
   [p1]: 1_Numerical_modeling.pdf
@@ -21,7 +22,6 @@
 
 
 
-
 **[Presentation #4 ][p4]**  
 
   [p4]: 4_Numerical_modeling.pdf
@@ -32,7 +32,7 @@
 
   [p5]: 5_Numerical_modeling.pdf
 
-
+-->
 
 ##  Activities
 
@@ -40,7 +40,7 @@
 
   [t1]: Activity1.pdf
 
-
+<!---
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
@@ -54,6 +54,8 @@
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
+  
+  -->
   
 ##  Material 
 
