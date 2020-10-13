@@ -5,11 +5,12 @@
 ##  Presentations
 
 
-<!---
+
 **[Presentation #1 ][p1]**  
 
   [p1]: 1_Numerical_modeling.pdf
 
+<!---
 
 **[Presentation #2 ][p2]**  
 
