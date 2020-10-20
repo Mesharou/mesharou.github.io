@@ -10,13 +10,13 @@
 
   [p1]: 1_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Numerical_modeling.pdf
 
-
+<!---
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Numerical_modeling.pdf
@@ -41,12 +41,12 @@
 
   [t1]: Activity1.pdf
 
-<!---
+
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
 
-
+<!---
 **[Activity #3 ][t3]**  
 
   [t3]: Activity3.pdf
@@ -66,9 +66,9 @@
 
   [c30]: croco.tar.gz
 
-**[croco.in.Basin ][c33]**  
+**[croco.in.Basin ][c35]**  
 
-  [c33]: croco.in.Basin
+  [c35]: croco.in.Basin
 
 
 **[CROCO TOOLS ][c32]**  
