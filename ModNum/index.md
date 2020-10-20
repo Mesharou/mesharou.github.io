@@ -78,7 +78,7 @@
   
 **[notebook barotropic vorticity][c31]**  
 
-  [c31]: barotropic_vorticity_balance.py.ipynb
+  [c31]: barotropic_vorticity_balance.ipynb
   
   
 **[croco_example.ipynb][c33]**  
