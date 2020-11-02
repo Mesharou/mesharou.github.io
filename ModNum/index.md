@@ -16,12 +16,12 @@
 
   [p2]: 2_Numerical_modeling.pdf
 
-<!---
+
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #4 ][p4]**  
 
