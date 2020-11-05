@@ -102,7 +102,10 @@
 
   [p32]: formation_adv_diff.pdf
   
-  
+
+**[Finite differences ][p33]**  
+
+  [p33]: http://www.dam.brown.edu/people/alcyew/handouts/numdiff.pdf  
   
 ###  Articles
 
