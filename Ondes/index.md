@@ -30,9 +30,15 @@
 
   [c5]: 4_Ondes_2019.pdf
   
+  
+ -->
+ 
+ 
 **[Notes #1 ][n1]**  
 
-  [n1]: cours1_notes.pdf
+  [n1]: cours1.pdf
+  
+<!---
   
 **[Notes #2 ][n2]**  
 
