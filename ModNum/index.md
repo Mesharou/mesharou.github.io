@@ -27,13 +27,12 @@
 
   [p4]: 4_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #5 ][p5]**  
 
   [p5]: 5_Numerical_modeling.pdf
 
--->
 
 ##  Activities
 
