@@ -34,7 +34,7 @@
  -->
  
  
-**[Notes #1 ][n1]**  
+**[Notes #1 and #2 ][n1]**  
 
   [n1]: cours1.pdf
   
