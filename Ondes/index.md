@@ -20,12 +20,12 @@
 
   [c3]: 2_Ondes_2020.pdf
 
-<!---
+
 **[Internal Waves #3 ][c4]**  
 
   [c4]: 3_Ondes_2019.pdf
 
-
+<!---
 **[Internal Waves #4 ][c5]**  
 
   [c5]: 4_Ondes_2019.pdf
