@@ -34,6 +34,19 @@
   [p5]: 5_Numerical_modeling.pdf
 
 
+
+**[Presentation #6 ][p6]**  
+
+  [p6]: 6_Numerical_modeling.pdf
+
+
+
+
+**[Presentation #7 ][p7]**  
+
+  [p7]: 7_Numerical_modeling.pdf
+
+
 ##  Activities
 
 **[Activity #1 ][t1]**  
@@ -55,13 +68,17 @@
   [t5]: modelling.pdf
   
 
-<!---
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
   
   
-  -->
+## Project
+
+**[Project][p0]**  
+
+  [p0]: projets_modnum2021.pdf
+
   
 ##  Material 
 
