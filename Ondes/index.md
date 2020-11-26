@@ -65,9 +65,9 @@
 ###  Books
 
 
-**[Gerkema (internal waves)][p3]**  
+**[Gerkema (internal waves)][p2]**  
 
-  [p3]: gerkema.pdf
+  [p2]: gerkema.pdf
 
 
 ###  Articles
