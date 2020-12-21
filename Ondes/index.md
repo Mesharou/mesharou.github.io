@@ -37,6 +37,12 @@
 
   [n1]: cours1.pdf
   
+  
+   
+**[Notes #3 ][n1]**  
+
+  [n2]: cours3_notes.pdf
+  
 <!---
   
 **[Notes #2 ][n2]**  
