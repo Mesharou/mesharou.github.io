@@ -7,19 +7,23 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Turb_2020.pdf
+  [p1]: 1_Turb_2021.pdf
   
+<!--- 
   
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Turb_2020.pdf
+  [p2]: 2_Turb_2021.pdf
   
   
   
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Turb_2020.pdf
+  [p3]: 3_Turb_2021.pdf
 
+--->
+
+<!--- 
 ##  Activity
 
 
@@ -56,8 +60,9 @@
 **[Atlantic for turb.nc ][ac8]**  
 
   [ac8]: http://mespages.univ-brest.fr/~gula/Turb/Atlantic_for_turb.nc
+--->
 
-##  Articles for oral presentation
+##  Articles for project
 
 **[Articles ][g30]**  
 
@@ -79,10 +84,10 @@
 **[May, 1976 ][a1]**
 
 
-  [a1]: May76.pdf
+  [a1]: Articles/May76.pdf
 
 
 **[Champagne, 1978 ][a2]**
 
 
-  [a2]: Champagne78.pdf
+  [a2]: Articles/Champagne78.pdf
