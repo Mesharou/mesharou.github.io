@@ -23,8 +23,12 @@
 
 --->
 
-<!--- 
+
 ##  Activity
+
+**[Chaos ][ac4]**  
+
+  [ac4]: chaos.ipynb
 
 
 **[Activity #1 ][ac1]**  
@@ -39,6 +43,8 @@
 **[enstrophy_cascade #1 ][ac3]**  
 
   [ac3]: enstrophy_cascade.py
+ 
+<!--- 
  
 **[spectrum analysis #1 ][ac4]**  
 
