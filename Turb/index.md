@@ -26,17 +26,17 @@
 
 ##  Activity
 
-**[Chaos ][ac4]**  
+**[Chaos ][ac6]**  
 
-  [ac4]: chaos.ipynb
+  [ac6]: chaos.ipynb
 
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
 
-**[free_decay][ac5]**  
+**[free_decay][ac7]**  
 
-  [ac5]: free_decay.py
+  [ac7]: free_decay.py
 
 **[energy_cascade][ac2]**  
 
