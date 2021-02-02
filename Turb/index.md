@@ -26,17 +26,17 @@
 
 ##  Activity
 
-**[Chaos ][ac6]**  
+**[Chaos ][ac11]**  
 
-  [ac6]: chaos.ipynb
+  [ac11]: chaos.ipynb
 
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
 
-**[free_decay][ac7]**  
+**[free_decay][ac12]**  
 
-  [ac7]: free_decay.py
+  [ac12]: free_decay.py
 
 **[energy_cascade][ac2]**  
 
@@ -46,12 +46,18 @@
 
   [ac3]: enstrophy_cascade.py
  
-<!--- 
  
-**[spectrum analysis #1 ][ac4]**  
+ 
+ 
 
-  [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/spectrum_analysis.ipynb  
+ 
+**[turbulence 2d analysis #1 ][ac4]**  
+
+  [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_example.ipynb 
   
+  
+<!--- 
+
 **[Activity #2 ][ac5]**  
 
   [ac5]: Activity2.pdf
