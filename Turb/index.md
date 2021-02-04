@@ -9,19 +9,16 @@
 
   [p1]: 1_Turb_2021.pdf
   
-
   
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Turb_2021.pdf
   
-<!--- 
   
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Turb_2021.pdf
 
---->
 
 
 ##  Activity
@@ -46,26 +43,18 @@
 
   [ac3]: enstrophy_cascade.py
  
- 
- 
- 
 
  
 **[turbulence 2d analysis #1 ][ac4]**  
 
   [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_example.ipynb 
   
-  
-<!--- 
 
-**[Activity #2 ][ac5]**  
+**[Homework ][ac5]**  
 
-  [ac5]: Activity2.pdf
+  [ac5]: homework.pdf
   
-  
-**[spectrum analysis #2 ][ac6]**  
 
-  [ac6]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence_ocean.ipynb  
   
 **[GS for turb.nc ][ac7]**  
 
@@ -74,6 +63,8 @@
 **[Atlantic for turb.nc ][ac8]**  
 
   [ac8]: http://mespages.univ-brest.fr/~gula/Turb/Atlantic_for_turb.nc
+  
+  
 --->
 
 ##  Articles for project
