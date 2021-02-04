@@ -334,8 +334,6 @@ kbd {
 
 <p><strong><a href="TP_thermo.pdf">TP thermo</a></strong>  </p>
 
-<p><strong><a href="https://github.com/Mesharou/mesharou.github.io/tree/master/Physnum/thermo_example.ipynb">script example</a></strong>  </p>
-
 <h2 id="toc_2">Data</h2>
 
 <p><strong><a href="profile1.npy">profile1.npy</a></strong>  </p>
@@ -347,6 +345,25 @@ kbd {
 <p><strong><a href="profile4.npy">profile4.npy</a></strong>  </p>
 
 
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 </body>

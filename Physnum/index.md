@@ -11,10 +11,6 @@
 
 
 
-**[script example][p2]**  
-
-  [p2]: https://github.com/Mesharou/mesharou.github.io/tree/master/Physnum/thermo_example.ipynb
-
   
 ##  Data
 
