@@ -8,31 +8,32 @@
 
 **[Introduction: Ocean Waves ][c1]**  
 
-  [c1]: Intro_Ondes_2020.pdf
+  [c1]: 0_Ondes_2021.pdf
 
 
 **[Internal Waves #1 ][c2]**  
 
-  [c2]: 1_Ondes_2020.pdf
+  [c2]: 1_Ondes_2021.pdf
 
 
 **[Internal Waves #2 ][c3]**  
 
-  [c3]: 2_Ondes_2020.pdf
+  [c3]: 2_Ondes_2021.pdf
 
 
 **[Internal Waves #3 ][c4]**  
 
-  [c4]: 3_Ondes_2020.pdf
+  [c4]: 3_Ondes_2021.pdf
 
 
 **[Internal Waves #4 ][c5]**  
 
-  [c5]: 4_Ondes_2020.pdf
+  [c5]: 4_Ondes_2021.pdf
   
   
 
- 
+<!---
+
 **[Notes #1 and #2 ][n1]**  
 
   [n1]: cours1.pdf
@@ -43,7 +44,7 @@
 
   [n2]: cours3_notes.pdf
   
-<!---
+
   
 **[Notes #2 ][n2]**  
 
@@ -52,7 +53,7 @@
 **[Notes #3 ][n3]**  
 
   [n3]: cours3_notes.pdf
--->
+
 
 ##  Homework
 
@@ -60,7 +61,7 @@
 
   [e1]: homework_waves.pdf  
 
-
+-->
 
 
 
