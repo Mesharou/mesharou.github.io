@@ -10,12 +10,12 @@
 
   [p1]: 1_Numerical_modeling.pdf
 
-<!---
 
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Numerical_modeling.pdf
 
+<!---
 
 **[Presentation #3 ][p3]**  
 
@@ -45,7 +45,7 @@
 **[Presentation #7 ][p7]**  
 
   [p7]: 7_Numerical_modeling.pdf
-
+-->
 
 ##  Activities
 
@@ -54,6 +54,7 @@
   [t1]: Activity1.pdf
 
 
+<!---
 
 **[Activity #2 ][t2]**  
 
@@ -79,8 +80,12 @@
 **[Project][p0]**  
 
   [p0]: projets_modnum2021.pdf
+-->
 
-  
+
+
+
+
 ##  Material 
 
 ###  Code
@@ -98,7 +103,8 @@
 
   [c32]: croco_tools-v1.1.tar.gz
   
-  
+<!---
+
 **[notebook barotropic vorticity][c31]**  
 
   [c31]: barotropic_vorticity_balance.ipynb
@@ -114,7 +120,7 @@
   [c34]: tools.py
   
   
-
+-->
   
 ###  Doc
 
@@ -152,4 +158,3 @@
   [a4]: Griffiesetal00.pdf
   [a5]: ShchepetkinMcWilliams05.pdf
 
--->
