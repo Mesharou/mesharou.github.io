@@ -10,7 +10,7 @@
 
   [p1]: 1_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #2 ][p2]**  
 
@@ -52,6 +52,7 @@
 **[Activity #1 ][t1]**  
 
   [t1]: Activity1.pdf
+
 
 
 **[Activity #2 ][t2]**  
@@ -113,6 +114,8 @@
   [c34]: tools.py
   
   
+
+  
 ###  Doc
 
 **[Diagnostics Croco ][p31]**  
@@ -148,3 +151,5 @@
   
   [a4]: Griffiesetal00.pdf
   [a5]: ShchepetkinMcWilliams05.pdf
+
+-->
