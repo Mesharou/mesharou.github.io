@@ -15,13 +15,13 @@
 
   [p2]: 2_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #4 ][p4]**  
 
@@ -54,12 +54,13 @@
   [t1]: Activity1.pdf
 
 
-<!---
 
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
 
+
+<!---
 
 **[Activity #3 ][t3]**  
 
