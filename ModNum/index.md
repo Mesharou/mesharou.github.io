@@ -21,13 +21,13 @@
 
   [p3]: 3_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #4 ][p4]**  
 
   [p4]: 4_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #5 ][p5]**  
 
@@ -60,7 +60,6 @@
   [t2]: Activity2.pdf
 
 
-<!---
 
 **[Activity #3 ][t3]**  
 
@@ -70,6 +69,7 @@
 
   [t5]: modelling.pdf
   
+<!---
 
 **[Activity #4 ][t4]**  
 
@@ -104,13 +104,14 @@
 
   [c32]: croco_tools-v1.1.tar.gz
   
-<!---
+
 
 **[notebook barotropic vorticity][c31]**  
 
   [c31]: barotropic_vorticity_balance.ipynb
   
-  
+<!---
+
 **[croco_example.ipynb][c33]**  
 
   [c33]: croco_example.ipynb
