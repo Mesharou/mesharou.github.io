@@ -33,13 +33,13 @@
 
   [p5]: 5_Numerical_modeling.pdf
 
-<!---
 
 **[Presentation #6 ][p6]**  
 
   [p6]: 6_Numerical_modeling.pdf
 
 
+<!---
 
 
 **[Presentation #7 ][p7]**  
@@ -110,7 +110,7 @@
 
   [c31]: barotropic_vorticity_balance.ipynb
   
-<!---
+
 
 **[croco_example.ipynb][c33]**  
 
@@ -121,8 +121,7 @@
 
   [c34]: tools.py
   
-  
--->
+
   
 ###  Doc
 
