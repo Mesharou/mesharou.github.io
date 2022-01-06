@@ -39,13 +39,11 @@
   [p6]: 6_Numerical_modeling.pdf
 
 
-<!---
-
 
 **[Presentation #7 ][p7]**  
 
   [p7]: 7_Numerical_modeling.pdf
--->
+
 
 ##  Activities
 
@@ -69,7 +67,7 @@
 
   [t5]: modelling.pdf
   
-<!---
+
 
 **[Activity #4 ][t4]**  
 
@@ -80,8 +78,8 @@
 
 **[Project][p0]**  
 
-  [p0]: projets_modnum2021.pdf
--->
+  [p0]: projets_modnum2122.pdf
+
 
 
 
@@ -95,32 +93,29 @@
 
   [c30]: croco.tar.gz
 
-**[croco.in.Basin ][c35]**  
-
-  [c35]: croco.in.Basin
-
 
 **[CROCO TOOLS ][c32]**  
 
   [c32]: croco_tools-v1.1.tar.gz
   
 
-
 **[notebook barotropic vorticity][c31]**  
 
   [c31]: barotropic_vorticity_balance.ipynb
   
 
+**[example_croco.ipynb][c33]**  
 
-**[croco_example.ipynb][c33]**  
-
-  [c33]: croco_example.ipynb
+  [c33]: https://github.com/Mesharou/mesharou.github.io/blob/master/Croco/example_croco.ipynb
   
     
 **[Python tools][c34]**  
 
   [c34]: tools.py
   
+**[example_croco\_array.ipynb][c35]**  
+
+  [c35]: https://github.com/Mesharou/mesharou.github.io/blob/master/Croco/example_croco_xarray.ipynb
 
   
 ###  Doc
