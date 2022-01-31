@@ -45,6 +45,12 @@
   [p7]: 7_Numerical_modeling.pdf
 
 
+
+**[Presentation #8 ][p8]**  
+
+  [p8]: oopc.pdf
+
+
 ##  Activities
 
 **[Activity #1 ][t1]**  
