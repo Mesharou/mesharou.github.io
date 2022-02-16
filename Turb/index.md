@@ -9,25 +9,29 @@
 **[Presentation #1 ][p1]**  
 
   [p1]: 1_Turb_2022.pdf
-  
-<!---
+
   
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Turb_2021.pdf
+  [p2]: 2_Turb_2022.pdf
   
-  
+<!---
+    
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Turb_2021.pdf
 
 
+--->
 
 ##  Activity
 
 **[Chaos ][ac11]**  
 
   [ac11]: chaos.ipynb
+
+<!---
+  
 
 **[Activity #1 ][ac1]**  
 
@@ -68,6 +72,7 @@
   
   
 --->
+
 
 ##  Articles for project
 
