@@ -30,12 +30,14 @@
 
   [ac11]: chaos.ipynb
 
-<!---
   
 
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
+
+
+<!---
 
 **[free_decay][ac12]**  
 
@@ -96,10 +98,10 @@
 **[May, 1976 ][a1]**
 
 
-  [a1]: Articles/May76.pdf
+  [a1]: http://mespages.univ-brest.fr/~gula/Turb/Articles/May76.pdf
 
 
 **[Champagne, 1978 ][a2]**
 
 
-  [a2]: Articles/Champagne78.pdf
+  [a2]: http://mespages.univ-brest.fr/~gula/Turb/Articles/Champagne78.pdf
