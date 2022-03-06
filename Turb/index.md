@@ -15,14 +15,13 @@
 
   [p2]: 2_Turb_2022.pdf
   
-<!---
+
     
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Turb_2021.pdf
+  [p3]: 3_Turb_2022.pdf
 
 
---->
 
 ##  Activity
 
@@ -51,13 +50,13 @@
 
   [ac3]: enstrophy_cascade.py
  
-
+--->
  
 **[turbulence 2d analysis #1 ][ac4]**  
 
   [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_example.ipynb 
   
---->
+
 
 **[Homework ][ac5]**  
 
