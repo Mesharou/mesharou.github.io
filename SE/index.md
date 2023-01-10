@@ -132,7 +132,7 @@
 
 ###  Ressources
 
-**[http://stockage.univ-brest.fr/~gula/SE/Material/ ][p30]**  
+**[Some material ][p30]**  
 
   [p30]: Material/
   
