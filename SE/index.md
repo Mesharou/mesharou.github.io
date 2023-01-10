@@ -13,7 +13,8 @@
 **[#2 Scientific Paper ][c2]**  
 
   [c2]: Cours/2_Scientific_paper.pdf
-
+  
+<!---
 
 **[#3 Scientific Report ][c3]**  
 
@@ -39,9 +40,10 @@
 
   [c7]: Cours/7_Writing_and_revising.pdf
   
+--->
 
 ##  Reviews
-
+<!---
 **Document for reviews ([pdf][r1]/[doc][r2])**  
 
   [r1]: review.pdf
@@ -124,6 +126,8 @@
 [r7b]: Articles/Review_Mignot_by_Fabregas.pdf
 [r7c]: Articles/Review_Mignot_by_Reinert.pdf
 
+--->
+
 ##  Material (Ressources + Articles)
 
 ###  Ressources
@@ -135,47 +139,29 @@
 
 ###  Articles
 
-**[Adamsetal11.pdf][p4]**  
-**[Allgeieretal16.pdf][p5]**  
-**[Brydenetal05.pdf][p6]**  
+ 
 **[Cheltonetal07.pdf][p7]**  
 **[Donatoetal11.pdf][p8]**  
-**[Hammerlietal12.pdf][p9]**  
 **[HughesDeCuevas01.pdf][p10]**  
-**[Jonssonetal16.pdf][p11]**  
-**[Kanzovetal10.pdf][p12]**  
-**[Krossetal13.pdf][p13]**  
+**[KirkPatricketal17.pdf][p12]**  
+**[LeBretonetal17.pdf][p13]**  
 **[LeCunBengioHinton15.pdf][p14]**  
-**[LynchStieglitz17.pdf][p15]**  
-**[Marshalletal17.pdf][p16]**  
 **[McWilliams16.pdf][p17]**  
 **[MossRacusinetal12.pdf][p18]**  
-**[Preinetal16.pdf][p19]**  
-**[Reynoldsetal16.pdf][p20]**  
 **[Roquetetal14.pdf][p21]**  
-**[Silveretal16.pdf][p22]**  
-**[Tilmanetal11.pdf][p23]**  
+
   
-  [p4]: Adamsetal11.pdf
-  [p5]: Allgeieretal16.pdf
-  [p6]: Brydenetal05.pdf
+
   [p7]: Cheltonetal07.pdf
   [p8]: Donatoetal11.pdf
-  [p9]: Hammerlietal12.pdf
   [p10]: HughesDeCuevas01.pdf
-  [p11]: Jonssonetal16.pdf
-  [p12]: Kanzovetal10.pdf
-  [p13]: Krossetal13.pdf
+  [p12]: KirkPatricketal17.pdf
+  [p13]: LeBretonetal17.pdf
   [p14]: LeCunBengioHinton15.pdf
-  [p15]: LynchStieglitz17.pdf
-  [p16]: Marshalletal17.pdf
   [p17]: McWilliams16.pdf.pdf
   [p18]: MossRacusinetal12.pdf
-  [p19]: Preinetal16.pdf
-  [p20]: Reynoldsetal16.pdf
   [p21]: Roquetetal14.pdf
-  [p22]: Silveretal16.pdf
-  [p23]: Tilmanetal11.pdf
+
   
   
   
