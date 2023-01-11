@@ -8,18 +8,18 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Numerical_modeling.pdf
+  [p1]: 1_Numerical_modeling_QJ.pdf
 
 
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Numerical_modeling.pdf
+  [p2]: 2_Numerical_modeling_QJ.pdf
 
 
 
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Numerical_modeling.pdf
+  [p3]: 3_Numerical_modeling_QJ.pdf
 
 
 
@@ -73,12 +73,13 @@
 
   [t5]: modelling.pdf
   
-
+<!---
 
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
-  
+ 
+
   
 ## Project
 
@@ -86,7 +87,7 @@
 
   [p0]: projets_modnum2122.pdf
 
-
+--->
 
 
 
