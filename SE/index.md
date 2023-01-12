@@ -142,6 +142,7 @@
  
 **[Cheltonetal07.pdf][p7]**  
 **[Donatoetal11.pdf][p8]**  
+**[Hallmannetal17.pdf][p9]** 
 **[HughesDeCuevas01.pdf][p10]**  
 **[KirkPatricketal17.pdf][p12]**  
 **[LeBretonetal17.pdf][p13]**  
@@ -154,6 +155,7 @@
 
   [p7]: Cheltonetal07.pdf
   [p8]: Donatoetal11.pdf
+  [p9]: Hallmannetal17.pdf
   [p10]: HughesDeCuevas01.pdf
   [p12]: KirkPatricketal17.pdf
   [p13]: LeBretonetal17.pdf
