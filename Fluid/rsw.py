@@ -81,7 +81,7 @@ plotvar = 'h'
 
 
 # Type of topography: ['flat', 'jump', etc.]
-topography = 'inlet';
+topography = 'flat';
 
 # Initial condition ['geostrophicadj',etc.]
 initial_condition = 'geostrophicadj'
