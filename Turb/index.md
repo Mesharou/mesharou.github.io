@@ -8,28 +8,30 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Turb_2022.pdf
+  [p1]: 1_Turb_2023.pdf
 
   
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Turb_2022.pdf
+  [p2]: 2_Turb_2023.pdf
   
-
+<!--
     
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Turb_2022.pdf
+  [p3]: 3_Turb_2023.pdf
 
-
+-->
 
 ##  Activity
+
+<!--
 
 **[Chaos ][ac11]**  
 
   [ac11]: chaos.ipynb
 
-  
+ --> 
 
 **[Activity #1 ][ac1]**  
 
@@ -50,7 +52,7 @@
 
   [ac3]: enstrophy_cascade.py
  
---->
+
  
 **[turbulence 2d analysis #1 ][ac4]**  
 
@@ -82,6 +84,7 @@
 
   [g30]: http://mespages.univ-brest.fr/~gula/Turb/Articles/
 
+--->
   
 ##  Material 
 
