@@ -15,23 +15,22 @@
 
   [p2]: 2_Turb_2023.pdf
   
-<!--
     
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Turb_2023.pdf
 
--->
+
 
 ##  Activity
 
-<!--
+
 
 **[Chaos ][ac11]**  
 
   [ac11]: chaos.ipynb
 
- --> 
+
 
 **[Activity #1 ][ac1]**  
 
@@ -58,7 +57,7 @@
 
   [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_2022.ipynb 
   
-
+--->
 
 **[Homework ][ac5]**  
 
@@ -84,7 +83,7 @@
 
   [g30]: http://mespages.univ-brest.fr/~gula/Turb/Articles/
 
---->
+
   
 ##  Material 
 
