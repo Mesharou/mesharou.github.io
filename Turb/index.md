@@ -37,7 +37,6 @@
   [ac1]: Activity1.pdf
 
 
-<!---
 
 **[free_decay][ac12]**  
 
@@ -57,7 +56,7 @@
 
   [ac4]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_2022.ipynb 
   
---->
+
 
 **[Homework ][ac5]**  
 
