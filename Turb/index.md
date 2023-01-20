@@ -99,10 +99,10 @@
 **[May, 1976 ][a1]**
 
 
-  [a1]: http://mespages.univ-brest.fr/~gula/Turb/Articles/May76.pdf
+  [a1]: ./Articles/May76.pdf
 
 
 **[Champagne, 1978 ][a2]**
 
 
-  [a2]: http://mespages.univ-brest.fr/~gula/Turb/Articles/Champagne78.pdf
+  [a2]: ./Articles/Champagne78.pdf
