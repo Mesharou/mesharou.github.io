@@ -80,7 +80,7 @@
 
 **[Articles ][g30]**  
 
-  [g30]: http://mespages.univ-brest.fr/~gula/Turb/Articles/
+  [g30]: ./Articles
 
 
   
@@ -90,7 +90,7 @@
 
 **[Old Masters Note ][c30]**  
 
-  [c30]: Cours
+  [c30]: ./Cours
 
 
 
