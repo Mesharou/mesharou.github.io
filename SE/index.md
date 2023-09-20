@@ -140,16 +140,28 @@
 ###  Articles
 
  
-**[Cheltonetal07.pdf][p7]**  
+**[Cheltonetal07.pdf][p7]**
+
 **[Donatoetal11.pdf][p8]**
-**[FernandezCastroetal22.pdf][p6]**  
+
+**[FernandezCastroetal22.pdf][p6]**
+
+**[Gargetal18.pdf][p5]**
+
 **[Hallmannetal17.pdf][p9]** 
+
 **[HughesDeCuevas01.pdf][p10]**  
+
 **[KirkPatricketal17.pdf][p12]**  
-**[LeBretonetal17.pdf][p13]**  
+
+**[LeBretonetal17.pdf][p13]** 
+ 
 **[LeCunBengioHinton15.pdf][p14]**  
+
 **[McWilliams16.pdf][p17]**  
-**[MossRacusinetal12.pdf][p18]**  
+
+**[MossRacusinetal12.pdf][p18]** 
+ 
 **[Roquetetal14.pdf][p21]**  
 
   
@@ -157,6 +169,7 @@
   [p7]: Cheltonetal07.pdf
   [p8]: Donatoetal11.pdf
   [p6]: FernandezCastroetal22.pdf
+  [p5]: Gargetal18.pdf
   [p9]: Hallmannetal17.pdf
   [p10]: HughesDeCuevas01.pdf
   [p12]: KirkPatricketal17.pdf
