@@ -28,6 +28,7 @@
   [p4]: 4_Numerical_modeling.pdf
 
 
+<!---
 
 **[Presentation #5 ][p5]**  
 
@@ -50,6 +51,7 @@
 
   [p8]: oopc.pdf
 
+--->
 
 ##  Activities
 
@@ -58,11 +60,9 @@
   [t1]: Activity1.pdf
 
 
-
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
-
 
 
 **[Activity #3 ][t3]**  
@@ -73,6 +73,7 @@
 
   [t5]: modelling.pdf
   
+<!---
 
 **[Activity #4 ][t4]**  
 
@@ -92,7 +93,7 @@
   [p0]: projets_modnum2223.pdf
 
 
-
+--->
 
 
 
