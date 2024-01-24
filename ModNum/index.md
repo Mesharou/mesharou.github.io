@@ -28,13 +28,13 @@
   [p4]: 4_Numerical_modeling.pdf
 
 
-<!---
+
 
 **[Presentation #5 ][p5]**  
 
   [p5]: 5_Numerical_modeling.pdf
 
-
+<!---
 **[Presentation #6 ][p6]**  
 
   [p6]: 6_Numerical_modeling.pdf
@@ -73,14 +73,13 @@
 
   [t5]: modelling.pdf
   
-<!---
+
 
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
  
-  
-
+<!---
 **[Activity #5 ][t5]**  
 
   [t5]: Activity5.pdf
