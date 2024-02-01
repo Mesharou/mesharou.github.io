@@ -34,12 +34,12 @@
 
   [p5]: 5_Numerical_modeling.pdf
 
-<!---
+
 **[Presentation #6 ][p6]**  
 
   [p6]: 6_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #7 ][p7]**  
 
@@ -79,12 +79,12 @@
 
   [t4]: Activity4.pdf
  
-<!---
+
 **[Activity #5 ][t5]**  
 
   [t5]: Activity5.pdf
 
-  
+<!---
 ## Project
 
 **[Project][p0]**  
