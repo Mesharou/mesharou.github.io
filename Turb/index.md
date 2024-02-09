@@ -8,23 +8,24 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Turb_2023.pdf
+  [p1]: 1_Turb_2024.pdf
 
-  
+<!---
+ 
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Turb_2023.pdf
+  [p2]: 2_Turb_2024.pdf
   
     
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Turb_2023.pdf
+  [p3]: 3_Turb_2024.pdf
 
-
+--->
 
 ##  Activity
 
-
+<!---
 
 **[Chaos ][ac11]**  
 
@@ -72,7 +73,7 @@
 
   [ac8]: https://drive.google.com/file/d/1lfPnSqDk0GsiwOSZTorUdY2p6q6hiJyw/view?usp=share_link  
   
-
+--->
 
 
 ##  Articles for project
