@@ -25,13 +25,13 @@
 
 ##  Activity
 
-<!---
+
 
 **[Chaos ][ac11]**  
 
   [ac11]: chaos.ipynb
 
-
+<!---
 
 **[Activity #1 ][ac1]**  
 
