@@ -31,13 +31,13 @@
 
   [ac11]: chaos.ipynb
 
-<!---
+
 
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
 
-
+<!---
 
 **[free_decay][ac12]**  
 
