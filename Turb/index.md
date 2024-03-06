@@ -38,9 +38,9 @@
 
   [ac1]: Activity1.pdf
 
-**[Activity #2 ][ac2]**  
+**[Activity #2 ][ac23]**  
 
-  [ac2]: Activity2.pdf
+  [ac23]: Activity2.pdf
 
 
 <!---
