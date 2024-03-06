@@ -16,13 +16,13 @@
 
   [p2]: 2_Turb_2024.pdf
 
-<!---
+
     
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Turb_2024.pdf
 
---->
+
 
 ##  Activity
 
@@ -37,6 +37,11 @@
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
+
+**[Activity #2 ][ac2]**  
+
+  [ac2]: Activity2.pdf
+
 
 <!---
 
@@ -64,7 +69,7 @@
 
   [ac5]: homework.pdf
   
-
+--->
   
 **[GS for turb.nc ][ac7]**  
 
@@ -74,7 +79,7 @@
 
   [ac8]: https://drive.google.com/file/d/1lfPnSqDk0GsiwOSZTorUdY2p6q6hiJyw/view?usp=share_link  
   
---->
+
 
 
 ##  Articles for project
