@@ -8,13 +8,14 @@
 **[#1 Introduction ][c1]**  
 
   [c1]: Cours/1_introduction.pdf
-
+  
+<!---
 
 **[#2 Scientific Paper ][c2]**  
 
   [c2]: Cours/2_Scientific_paper.pdf
   
-<!---
+
 
 **[#3 Scientific Report ][c3]**  
 
@@ -139,6 +140,10 @@
 
 ###  Articles
 
+**[WynneCatanachetal24.pdf][p22]**
+
+**[Nianetal24.pdf][p23]**
+
 **[Berglundetal22.pdf][p15]**
  
 **[Cheltonetal07.pdf][p7]**
@@ -182,8 +187,8 @@
   [p17]: McWilliams16.pdf.pdf
   [p18]: MossRacusinetal12.pdf
   [p21]: Roquetetal14.pdf
-
-  
+  [p22]: WynneCatanachetal24.pdf
+  [p23]: Nianetal24.pdf
   
   
   
