@@ -144,6 +144,8 @@
 
 **[Nianetal24.pdf][p23]**
 
+**[Beechetal22.pdf][p24]**
+
 **[Berglundetal22.pdf][p15]**
  
 **[Cheltonetal07.pdf][p7]**
@@ -189,6 +191,6 @@
   [p21]: Roquetetal14.pdf
   [p22]: WynneCatanachetal24.pdf
   [p23]: Nianetal24.pdf
-  
+  [p24]: Beechetal22.pdf  
   
   
