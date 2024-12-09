@@ -21,7 +21,7 @@
 
   [p3]: 3_Numerical_modeling_QJ.pdf
 
-
+<!---
 
 **[Presentation #4 ][p4]**  
 
@@ -39,7 +39,7 @@
 
   [p6]: 6_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #7 ][p7]**  
 
@@ -55,6 +55,8 @@
 
 ##  Activities
 
+<!---
+
 **[Activity #1 ][t1]**  
 
   [t1]: Activity1.pdf
@@ -64,11 +66,14 @@
 
   [t2]: Activity2.pdf
 
+--->
 
 **[Activity #3 ][t3]**  
 
   [t3]: Activity3.pdf
   
+<!---
+
 **[Summary about gyre vorticity balances with CROCO][t5]**  
 
   [t5]: modelling.pdf
@@ -85,6 +90,7 @@
   [t5]: Activity5.pdf
 
 
+
 ## Project
 
 **[Project][p0]**  
@@ -94,6 +100,7 @@
 
 
 
+--->
 
 
 ##  Material 
