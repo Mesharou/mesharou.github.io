@@ -21,14 +21,14 @@
 
   [p3]: 3_Numerical_modeling_QJ.pdf
 
-<!---
+
 
 **[Presentation #4 ][p4]**  
 
   [p4]: 4_Numerical_modeling.pdf
 
 
-
+<!---
 
 **[Presentation #5 ][p5]**  
 
