@@ -1,6 +1,8 @@
 #!/usr/bin/python
-# Filename: romstools.py
-
+# Filename: tools.py
+'''
+    includes a few example functions useful for ROMS/CROCO outputs - python only
+'''
 
 #Netcdf IO module
 from netCDF4 import Dataset
@@ -10,10 +12,6 @@ import numpy as np
 
 #module for copy
 from copy import copy
-
-####################
-from itertools import product
-
 
 
 ####################
@@ -182,7 +180,7 @@ def vinterps(var,z,depths,topo, cubic=0):
 
 def psi2rho(var_psi):
 
-    if np.rank(var_psi)<3:
+    if np.ndim(var_psi)<3:
         var_rho = psi2rho_2d(var_psi)
     else:
         var_rho = psi2rho_3d(var_psi)
@@ -229,7 +227,7 @@ def psi2rho_3d(var_psi):
 
 def rho2psi(var_rho):
 
-    if np.rank(var_rho)<3:
+    if np.ndim(var_rho)<3:
         var_psi = rho2psi_2d(var_rho)
     else:
         var_psi = rho2psi_3d(var_rho)
@@ -260,7 +258,7 @@ def rho2psi_3d(var_rho):
 
 def rho2u(var_rho):
 
-    if np.rank(var_rho)<3:
+    if np.ndim(var_rho)<3:
         var_u = rho2u_2d(var_rho)
     else:
         var_u = rho2u_3d(var_rho)
@@ -290,7 +288,7 @@ def rho2u_3d(var_rho):
 
 def rho2v(var_rho):
 
-    if np.rank(var_rho)<3:
+    if np.ndim(var_rho)<3:
         var_v = rho2v_2d(var_rho)
     else:
         var_v = rho2v_3d(var_rho)
@@ -324,7 +322,7 @@ def rho2v_3d(var_rho):
 def u2rho(var_u):
 
 
-    if np.rank(var_u)<3:
+    if np.ndim(var_u)<3:
         var_rho = u2rho_2d(var_u)
     else:
         var_rho = u2rho_3d(var_u)
@@ -364,7 +362,7 @@ def u2rho_3d(var_u):
 
 def v2rho(var_v):
 
-    if np.rank(var_v)<3:
+    if np.ndim(var_v)<3:
         var_rho = v2rho_2d(var_v)
     else:
         var_rho = v2rho_3d(var_v)
@@ -412,7 +410,7 @@ def v2rho_3d(var_v):
 
 def vort(u,v,pm,pn):
 
-    if np.rank(u)<3:
+    if np.ndim(u)<3:
         vrt = vort_2d(u,v,pm,pn)
     else:
         vrt = vort_3d(u,v,pm,pn)
@@ -490,7 +488,7 @@ def div(u,v,pm,pn):
 
 def divs(u,v,pm,pn):
 
-    if np.rank(u)>2:
+    if np.ndim(u)>2:
 
         [Nz,Mz,Lz]=u.shape
         [Mp,Lp]=pm.shape
@@ -526,7 +524,7 @@ bvf computed on rho-w grid (first and last levels set to 0)
 
 def rho_eos(Tt,Ts,z_r,g,rho0,z_w=None):
 
-    if np.rank(Tt)==2:
+    if np.ndim(Tt)==2:
         [M,L]=Tt.shape
     else:
         [N,M,L]=Tt.shape
@@ -621,7 +619,7 @@ def alphabeta(Tt,Ts,rho0):
 
 def diffz(var,z):
 
-    if np.rank(var)<3:
+    if np.ndim(var)<3:
         dvardz = diffz_2d(var,z)
     else:
         dvardz = diffz_3d(var,z)
@@ -636,7 +634,7 @@ def diffz_2d(var,z):
     [N,M]=var.shape
     dvardz = var*np.nan
 
-    if np.rank(z)==2:
+    if np.ndim(z)==2:
         dvardz[1:,:] = (var[1:,:]-var[:-1,:])/(z[1:,:]-z[:-1,:])
         dvardz[0,:] =  dvardz[1,:]
     else:
@@ -653,7 +651,7 @@ def diffz_3d(var,z):
     [N,M,L]=var.shape
     dvardz = var*np.nan
 
-    if np.rank(z)==3:
+    if np.ndim(z)==3:
         dvardz[1:,:,:] = (var[1:,:,:]-var[:-1,:,:])/(z[1:,:,:]-z[:-1,:,:])
         dvardz[0,:,:] =  dvardz[1,:,:]
     else:
@@ -669,7 +667,7 @@ def diffz_3d(var,z):
 
 def diffx(var,pm):
 
-    if np.rank(var)<3:
+    if np.ndim(var)<3:
         dvardx = diffx_2d(var,pm)
     else:
         dvardx = diffx_3d(var,pm)
@@ -694,7 +692,7 @@ def diffx_3d(var,pm):
 def diffx_2d(var,pm):
 
 
-    if np.rank(pm)==2: dvardx = (var[:,1:]-var[:,:-1])*0.5*(pm[:,1:]+pm[:,:-1])
+    if np.ndim(pm)==2: dvardx = (var[:,1:]-var[:,:-1])*0.5*(pm[:,1:]+pm[:,:-1])
 
     else: dvardx = (var[:,1:]-var[:,:-1])*pm
 
@@ -707,7 +705,7 @@ def diffx_2d(var,pm):
 
 def diffy(var,pn):
 
-    if np.rank(var)<3: dvardy = diffy_2d(var,pn)
+    if np.ndim(var)<3: dvardy = diffy_2d(var,pn)
     else: dvardy = diffy_3d(var,pn)
 
     return dvardy
@@ -727,7 +725,7 @@ def diffy_3d(var,pn):
 
 def diffy_2d(var,pn):
 
-    if np.rank(pn)==2: dvardy = (var[1:,:]-var[:-1,:])*0.5*(pn[1:,:]+pn[:-1,:])
+    if np.ndim(pn)==2: dvardy = (var[1:,:]-var[:-1,:])*0.5*(pn[1:,:]+pn[:-1,:])
     else: dvardy = (var[1:,:]-var[:-1,:])*pn
 
     return dvardy
@@ -736,7 +734,7 @@ def diffy_2d(var,pn):
 
 def diffysmooth(var,pn):
 
-    if np.rank(var)<3: dvardy = diffy_2dsmooth(var,pn)
+    if np.ndim(var)<3: dvardy = diffy_2dsmooth(var,pn)
     else: dvardy = diffy_3dsmooth(var,pn)
 
     return dvardy

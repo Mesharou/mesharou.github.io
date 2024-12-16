@@ -72,18 +72,18 @@
 
   [t3]: Activity3.pdf
   
+
+**[Activity #4 ][t4]**  
+
+  [t4]: Activity4.pdf
+  
+  
 <!---
 
 **[Summary about gyre vorticity balances with CROCO][t5]**  
 
   [t5]: modelling.pdf
   
-
-
-**[Activity #4 ][t4]**  
-
-  [t4]: Activity4.pdf
- 
 
 **[Activity #5 ][t5]**  
 
@@ -135,6 +135,11 @@
 
   [c35]: https://github.com/Mesharou/mesharou.github.io/blob/master/Croco/example_croco_xarray.ipynb
 
+      
+**[Functions for xarray][c36]**  
+
+  [c36]: xcroco.py
+  
   
 ###  Doc
 
