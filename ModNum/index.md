@@ -168,6 +168,7 @@
 **[Griffies et al, 2000 ][a4]**
 
 **[Shchepetkin & McWilliams, 2005 ][a5]** 
+**[De Marez & LeCorre, 2020 ][a6]** 
 
 
   [a1]: Stommel48.pdf
@@ -177,3 +178,4 @@
   [a4]: Griffiesetal00.pdf
   [a5]: ShchepetkinMcWilliams05.pdf
 
+  [a6]: DeMarezLeCorre20.pdf
