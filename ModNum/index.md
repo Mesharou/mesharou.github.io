@@ -78,12 +78,13 @@
   [t4]: Activity4.pdf
   
   
-<!---
+
 
 **[Summary about gyre vorticity balances with CROCO][t5]**  
 
   [t5]: modelling.pdf
   
+<!---
 
 **[Activity #5 ][t5]**  
 
