@@ -83,9 +83,9 @@
   [t5]: modelling.pdf
   
 
-**[Activity #5 ][t5]**  
+**[Activity #5 ][t6]**  
 
-  [t5]: Activity5.pdf
+  [t6]: Activity5.pdf
 
 
 ## Project
@@ -93,11 +93,6 @@
 **[Project][p0]**  
 
   [p0]: projets_modnum2425.pdf
-
-
-
-
---->
 
 
 ##  Material 
