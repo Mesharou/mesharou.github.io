@@ -39,13 +39,13 @@
 
   [p6]: 6_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #7 ][p7]**  
 
   [p7]: 7_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #8 ][p8]**  
 

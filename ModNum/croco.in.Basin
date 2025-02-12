@@ -8,7 +8,7 @@ S-coord: THETA_S,   THETA_B,    Hc (m)
           1.0d0      0.0d0        10.d0
 
 initial: NRREC  filename
-          0 
+          0
                           basin_rst.nc
 
 restart:          NRST, NRPFRST / filename
