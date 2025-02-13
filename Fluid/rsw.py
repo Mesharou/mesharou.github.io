@@ -5,7 +5,7 @@
 # email: roullet@univ-brest.fr
 # date: november 2018
 #
-# Modified by J. Gula / January 2019
+# Modified by J. Gula / Feb 2025
 #
 # The model uses a C-grid in space
 # It is formulated in vector-invariant form
@@ -35,14 +35,14 @@
 import matplotlib
 from matplotlib.ticker import NullFormatter
 
-macuser = False
+macuser = True
 matplotlib.use('TkAgg')
 font = {'size': 16}
 matplotlib.rc('font', **font)
 
 import subprocess
 import os
-from numba import jit
+from numba import njit
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -102,18 +102,23 @@ xF = np.arange(nx+1)*dx
 yC = (0.5+np.arange(ny))*dy
 yF = np.arange(ny+1)*dy
 
+@njit
 def ddx(z):
     return (z[:, 1:]-z[:, :-1])/dx
 
+@njit
 def ddy(z):
     return (z[1:, :]-z[:-1, :])/dy
 
+@njit
 def avx(z):
     return (z[:, 1:]+z[:, :-1])*0.5
 
+@njit
 def avy(z):
     return (z[1:, :]+z[:-1, :])*0.5
 
+@njit
 def curlF(U_, V_):
     omega = np.zeros((ny+1, nx+1))
     omega[1:-1, :] = ddy(U_)
@@ -129,7 +134,7 @@ def pvC(h_, U_, V_):
     return (f+curlC(U_, V_))/(H+h_)
 
 
-@jit
+@njit
 def rhs(state):
     """ compute the RHS of the RSW equations
     input: state is a list of three arrays
@@ -381,7 +386,7 @@ class Movie(object):
         # Open an ffmpeg process
         outf = '%s.mp4' % name
         videoencoder = None
-        for v in ['avconv', 'ffmeg']:
+        for v in ['avconv', 'ffmpeg']:
             if subprocess.call(['which', v], stdout=subprocess.PIPE) == 0:
                 videoencoder = v
 
@@ -518,7 +523,7 @@ fig = Figure(plotvar)
 np.savez(case + 'initialstate', arr1=xC,arr2=yC,arr3=hC)
 
 for kt in range(nt):
-    #print('write = %i/%i -- time = %5.2f/%.2f' % (kt, nt, time, tend), end='')
+    print('write = %i/%i -- time = %5.2f/%.2f' % (kt, nt, time, tend), end='')
     
     if timescheme == 'Heun':
         ds0 = rhs(state)
@@ -577,6 +582,12 @@ for kt in range(nt):
     Energy[kt] = np.mean(energy.ravel())
     Potene[kt] = np.mean(pe.ravel())
     PVcont[kt] = np.mean(pv.ravel())
+    
+    if kt%10==0 and False:
+        plt.savefig(case + '{0:04}'.format(kt) + '_state.png')
+        np.savez(case + '{0:04}'.format(kt), arr1=xC,arr2=yC,arr3=hC)
+
+
 
 print('/done')
 fig.update()
