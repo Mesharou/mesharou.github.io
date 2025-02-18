@@ -4,7 +4,7 @@
 
 ##  Presentations
 
-
+<!---
 
 **[Presentation #1 ][p1]**  
 
@@ -22,11 +22,11 @@
 
   [p3]: 3_Turb_2024.pdf
 
-
+--->
 
 ##  Activity
 
-
+<!---
 
 **[Chaos ][ac11]**  
 
@@ -43,7 +43,6 @@
   [ac23]: Activity2.pdf
 
 
-<!---
 
 **[free_decay][ac12]**  
 
