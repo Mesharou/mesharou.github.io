@@ -10,13 +10,13 @@
 
   [p1]: 1_Turb_2025.pdf
 
-<!---
+
  
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Turb_2024.pdf
 
-
+<!---
     
 **[Presentation #3 ][p3]**  
 
@@ -26,7 +26,7 @@
 
 ##  Activity
 
-<!---
+
 
 **[Chaos ][ac11]**  
 
@@ -56,7 +56,7 @@
 
   [ac3]: enstrophy_cascade.py
  
-
+<!---
  
 **[turbulence 2d analysis #1 ][ac4]**  
 
