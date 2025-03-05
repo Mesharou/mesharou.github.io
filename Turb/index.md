@@ -32,7 +32,6 @@
   [ac11]: chaos.ipynb
 
 
-
 **[Activity #1 ][ac1]**  
 
   [ac1]: Activity1.pdf
@@ -65,8 +64,6 @@
   [ac5]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_example.ipynb 
   
 
-  
---->
   
 **[GS for turb.nc ][ac7]**  
 
