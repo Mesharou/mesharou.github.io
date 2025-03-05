@@ -63,7 +63,7 @@
 
   [ac5]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/turbulence2d_example.ipynb 
   
-**[spectrum analysis #2 ][ac6]**  
+**[Example activity 2 ][ac6]**  
 
   [ac6]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/activity2_example.ipynb 
   
