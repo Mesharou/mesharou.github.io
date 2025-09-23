@@ -9,3 +9,12 @@
 
   [p1]: Coastal1_2025.pdf
 
+
+
+##  Exercises
+
+
+**[Activity #1 ][a1]**  
+
+  [a1]: td1.pdf
+
