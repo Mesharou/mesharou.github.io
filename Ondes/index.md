@@ -56,14 +56,6 @@
   [n3]: cours3_notes.pdf
 -->
 
-##  Homework
-
-**[Homework][e1]**  
-
-  [e1]: homework_waves.pdf  
-
-
-
 
 
 
