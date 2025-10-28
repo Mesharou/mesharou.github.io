@@ -20,7 +20,10 @@
 
   [c3]: internal-waves-3.pdf
 
+**[Internal Waves #3 ][c4]**  
 
+  [c4]: internal-waves-4.pdf
+  
 <!---
 
 **[Internal Waves #3 ][c4]**  
