@@ -16,12 +16,12 @@
   [c2]: internal-waves-2.pdf
 
 
-<!---
-
 **[Internal Waves #2 ][c3]**  
 
-  [c3]: 2_Ondes_2020.pdf
+  [c3]: internal-waves-3.pdf
 
+
+<!---
 
 **[Internal Waves #3 ][c4]**  
 
