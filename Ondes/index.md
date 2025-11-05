@@ -24,42 +24,6 @@
 
   [c4]: internal-waves-4.pdf
   
-<!---
-
-**[Internal Waves #3 ][c4]**  
-
-  [c4]: 3_Ondes_2020.pdf
-
-
-**[Internal Waves #4 ][c5]**  
-
-  [c5]: 4_Ondes_2020.pdf
-  
-  
-
- 
-**[Notes #1 and #2 ][n1]**  
-
-  [n1]: cours1.pdf
-  
-  
-   
-**[Notes #3 ][n1]**  
-
-  [n2]: cours3_notes.pdf
-  
-
-  
-**[Notes #2 ][n2]**  
-
-  [n2]: cours2_notes.pdf
-  
-**[Notes #3 ][n3]**  
-
-  [n3]: cours3_notes.pdf
--->
-
-
 
 
 
