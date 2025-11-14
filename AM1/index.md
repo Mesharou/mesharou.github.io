@@ -6,24 +6,25 @@
 ##  Course
 
 
-**[Part #1 ][c1]**  
+**[all parts ][c1]**  
 
-  [c1]: POLY_AM1_2526_part1.pdf
+  [c1]: POLY_AM1_2526.pdf
   
   
 ##  Activities (TD)
 
 
-**[td #1 ][a1]**  
+**[td #1 ][a1]** and **[solution][s1]**
 
   [a1]: TD1_AM1_2526.pdf
+  [s1]: TD1_AM1_2526_Solution.pdf 
   
   
-  
-**[td #2 ][a2]**  
+**[td #2 ][a2]** and **[solution][s2]**
+
 
   [a2]: TD2_AM1_2526.pdf
-  
+  [s2]: TD2_AM1_2526_Solution.pdf 
   
   
   
