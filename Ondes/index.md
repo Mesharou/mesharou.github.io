@@ -24,8 +24,15 @@
 
   [c4]: internal-waves-4.pdf
   
+**[Internal Waves #4 ][c4]**  
 
+  [c4]: internal-waves-5.pdf
+  
+  
+**[Internal Waves #5 ][c4]**  
 
+  [c4]: internal-waves-6.pdf
+  
 
 ##  Material (Books + Articles)
 
