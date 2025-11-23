@@ -33,6 +33,11 @@
 
   [c4]: internal-waves-6.pdf
   
+  
+**[Internal Waves #6 ][c4]**  
+
+  [c4]: internal-waves-7.pdf
+  
 
 ##  Material (Books + Articles)
 
