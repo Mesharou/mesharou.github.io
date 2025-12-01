@@ -38,6 +38,14 @@
 
   [c7]: internal-waves-7.pdf
   
+**[Activity #1][c8]**    
+  [c8]: activity_critlayer.pdf
+  
+**[Activity #2][c9]**    
+  [c9]: activity_intref.pdf
+  
+**[Activity #3][c10]**    
+  [c10]: activity_lee.pdf
 
 ##  Material (Books + Articles)
 
