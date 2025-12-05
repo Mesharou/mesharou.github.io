@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>index</title>
+<title>Activity1</title>
 
 
 <style type="text/css">
@@ -331,130 +331,176 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Numerical Modelling</h1>
-
-<h2 id="toc_1">Presentations</h2>
-
-<p><strong><a href="1_Numerical_modeling_QJ.pdf">Presentation #1 </a></strong>  </p>
-
-<!---
-
-**[Presentation #2 ][p2]**  
-
-
-
-
-
-**[Presentation #3 ][p3]**  
-
-
-
-
-
-**[Presentation #4 ][p4]**  
-
-
-
-
-
-
-**[Presentation #5 ][p5]**  
-
-
-
-
-**[Presentation #6 ][p6]**  
-
-
-
-
-
-**[Presentation #7 ][p7]**  
-
-
-
-
-**[Presentation #8 ][p8]**  
-
-
-
---->
-
-<h2 id="toc_2">Activities</h2>
-
-<p><strong><a href="Activity1.html">Activity #1 </a></strong>  </p>
-
-<!---
-
-**[Activity #2 ][t2]**  
-
-
-
-
-
-**[Activity #3 ][t3]**  
-
-
-  
-
-**[Activity #4 ][t4]**  
-
-
-  
-
-**[Summary about gyre vorticity balances with CROCO][t5]**  
-
-
-  
-
-**[Activity #5 ][t6]**  
-
-
---->
-
-<h2 id="toc_3">Project</h2>
-
-<p><strong><a href="projets_modnum2425.pdf">Project</a></strong>  </p>
-
-<h2 id="toc_4">Material</h2>
-
-<h3 id="toc_5">Code</h3>
-
-<p><strong><a href="croco.tar.gz">CROCO </a></strong>  </p>
-
-<p><strong><a href="croco_tools-v1.1.tar.gz">CROCO TOOLS </a></strong>  </p>
-
-<p><strong><a href="barotropic_vorticity_balance.ipynb">notebook barotropic vorticity</a></strong>  </p>
-
-<p><strong><a href="https://github.com/Mesharou/mesharou.github.io/ModNum/Croco/example_croco.ipynb">example_croco.ipynb</a></strong>  </p>
-
-<p><strong><a href="tools.py">Python tools</a></strong>  </p>
-
-<p><strong><a href="https://github.com/Mesharou/mesharou.github.io/ModNum/Croco/example_croco_xarray.ipynb">example_croco_array.ipynb</a></strong>  </p>
-
-<p><strong><a href="xcroco.py">Functions for xarray</a></strong>  </p>
-
-<h3 id="toc_6">Doc</h3>
-
-<p><strong><a href="diagnostics_croco.pdf">Diagnostics Croco </a></strong>  </p>
-
-<p><strong><a href="formation_adv_diff.pdf">Advective schemes </a></strong>  </p>
-
-<p><strong><a href="http://www.dam.brown.edu/people/alcyew/handouts/numdiff.pdf">Finite differences </a></strong>  </p>
-
-<h3 id="toc_7">Articles</h3>
-
-<p><strong><a href="Stommel48.pdf">Stommel, 1948 </a></strong></p>
-
-<p><strong><a href="Munk50.pdf">Munk, 1950 </a></strong></p>
-
-<p><strong><a href="HughesDeCuevas01.pdf">Hughes and DeCuevas, 2001 </a></strong></p>
-
-<p><strong><a href="Griffiesetal00.pdf">Griffies et al, 2000 </a></strong></p>
-
-<p><strong><a href="ShchepetkinMcWilliams05.pdf">Shchepetkin &amp; McWilliams, 2005 </a></strong> </p>
-
-<p><strong><a href="DeMarezLeCorre20.pdf">De Marez &amp; LeCorre, 2020 </a></strong> </p>
+<h1 id="toc_0">Activity 1 – Run an idealized ocean gyre</h1>
+
+<h2 id="toc_1">Install CROCO</h2>
+
+<ul>
+<li>Open a terminal (e.g. <code>Ctrl+Alt+T</code>)</li>
+<li>Create a directory (e.g. <code>mkdir ~/ModNum/</code>) for the project, then go there (e.g. <code>cd ~/ModNum/</code>)</li>
+<li><p><code>git clone</code> the CROCO code from the official website:
+<code>
+git clone https://gitlab.inria.fr/croco-ocean/croco.git
+</code></p></li>
+<li><p>You should see the following files (using <code>ls ./croco/</code>), and the source code (i.e. the FORTRAN files <code>*.F</code>) will be in the folder <code>./croco/OCEAN/</code></p>
+
+<p><img src="./Figure/CROCO_content.png" alt="Alt text" title="a title"></p></li>
+</ul>
+
+<h2 id="toc_2">Compile</h2>
+
+<ul>
+<li><p>Create a folder where you will run the model
+<code>
+mkdir ./case1
+[or mkdir -p ~/ModNum/case1]
+</code></p></li>
+<li><p>We need to edit the following files: <code>jobcomp</code>, <code>cppdefs.h</code>, <code>param.h</code>, <code>croco.in</code> so copy them into the folder you just created:
+<code>
+cp ~/ModNum/croco/OCEAN/jobcomp ~/ModNum/case1/
+cp ~/ModNum/croco/OCEAN/cppdefs.h ~/ModNum/case1/
+cp ~/ModNum/croco/OCEAN/param.h ~/ModNum/case1/
+cp ~/ModNum/croco/TEST_CASES/croco.in.Basin ~/ModNum/case1/croco.in
+</code></p></li>
+<li><p>The model needs a fortran compiler and compatible netcdf libraries</p>
+
+<ul>
+<li>With Linux on IUEM computers:
+
+<ul>
+<li>First, unload everything:
+<code>
+module purge
+</code></li>
+<li>Then load intel compilers and netcdf library:
+<code>
+module load intel/12.1 netcdf/c-4.4.1.1-intel12 netcdf/fortran-4.4.4-intel12
+</code></li>
+<li>You can verify that modules are loaded with
+<code>
+module list
+</code></li>
+</ul></li>
+<li><p>With MacOS:</p>
+
+<ul>
+<li>You need to have gcc and netcdf installed (using homebrew or macports):
+<code>
+brew install gcc
+brew install netcdf
+</code></li>
+<li><p>You may need to edit the jobcomp to specify where to find the netcdf libraries (<em>nf-config doesn’t work with homebrew version of netcdf-fortran</em>)</p>
+
+<div><pre><code class="language-none">NETCDFLIB=&quot;-L/usr/local/lib -lnetcdf -lnetcdff&quot;
+NETCDFINC=&quot;-I/usr/local/include&quot;
+#NETCDFLIB=$(nf-config --flibs)
+#NETCDFINC=-I$(nf-config --includedir)</code></pre></div></li>
+</ul></li>
+</ul></li>
+<li><p>Go to your case and edit the <code>jobcomp</code> to specify the location of the source code:
+<code>
+SOURCE=~/ModNum/croco/OCEAN
+</code></p></li>
+<li><p>Edit the <code>cppdefs.h</code> and choose the predefined test case \(\color{red}{Basin}\):
+```</p>
+
+<h1 id="toc_3">define BASIN</h1>
+
+<p>...</p>
+
+<h1 id="toc_4">undef REGIONAL</h1>
+
+<div><pre><code class="language-none"></code></pre></div></li>
+<li><p>Compile the code:
+<code>
+./jobcomp
+</code></p></li>
+</ul>
+
+<h2 id="toc_5">Run the model</h2>
+
+<ul>
+<li>Run the model:
+<code>
+./croco croco.in
+[or ./croco croco.in &amp;&gt; basin.out &amp;]
+</code></li>
+<li><p>[If you run the model in backgrounf mode (i.e. <code>./croco croco.in &amp;&gt; basin.out &amp;</code>), you can stop it with the unix command  <code>kill -9 PID</code>, where PID is the process ID associated with croco, which you can get with the <code>top</code> unix command.]</p>
+
+<ul>
+<li><p>Look at model variables:
+<code>
+ncdump -h basin_his.nc
+</code></p></li>
+<li><p>Look at the output:
+<code>
+ncview basin_his.nc
+</code></p></li>
+</ul></li>
+</ul>
+
+<h2 id="toc_6">Modify the namelist (croco.in)</h2>
+
+<p>See https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html
+ * Modify the namelist (<code>croco.in</code>) to:
+    * make the model run for 20 years (you can approximate 1 year = 360 days)
+    * output of history files every 30 days
+    * outputs of variables averaged over 5 years</p>
+
+<ul>
+<li>Note that you also need to modify the <code>cppdefs.h</code> to output averaged files:
+<img src="./Figure/Basin_averages.png" alt="Alt text" title="a title"></li>
+</ul>
+
+<h2 id="toc_7">Run the model using openMP</h2>
+
+<ul>
+<li>We need to edit the file <code>cppdefs.h</code></li>
+<li>Find the part of the file where the BASIN case is defined ( <code>#elif defined BASIN</code> )
+and change <code># undef OPENMP</code> into <code># define OPENMP</code></li>
+<li>Edit <code>param.h</code> to choose the number of processors (NPP) you want to use
+<img src="./Figure/openmp.png" alt="Alt text" title="a title"></li>
+<li>Recompile the code:
+<code>
+./jobcomp
+</code></li>
+<li>Define the number of threads to use for your computer (the number should be the same than NPP
+defined in the <code>param.h</code> file). Type in your terminal:
+
+<ul>
+<li>in bash:
+<code>
+export OMP_NUM_THREADS=8
+</code></li>
+<li>in csh/tcsh:
+<code>
+setenv OMP_NUM_THREADS 8
+</code></li>
+</ul></li>
+<li>run the model:
+<code>
+./croco croco.in
+</code></li>
+</ul>
+
+<h2 id="toc_8">QUESTIONS</h2>
+
+<ul>
+<li>About the configuration: 
+
+<ul>
+<li>What is the forcing?</li>
+<li>What is the Coriolis parameter?</li>
+<li>What is the boundary condition?</li>
+<li>What is the bottom condition?</li>
+<li>What is the accuracy of the advection scheme?</li>
+</ul></li>
+<li>About the circulation:
+
+<ul>
+<li>Is it similar to Stommel’s gyre (http://ido.at.fcen.uba.ar/index<em>archivos/Stommel</em>1948.pdf)?</li>
+</ul></li>
+</ul>
 
 
 

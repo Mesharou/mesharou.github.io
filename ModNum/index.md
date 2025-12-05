@@ -60,12 +60,9 @@
 
 **[Activity #1 ][t1]**  
 
-  [t1]: Activity1.pdf
+  [t1]: Activity1.html
 
 
-**[Activity #1 ][m1]**  
-
-  [m1]: Activity1.md
   
 <!---
 

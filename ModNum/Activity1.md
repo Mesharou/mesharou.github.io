@@ -4,6 +4,7 @@
   * Open a terminal (e.g. ```Ctrl+Alt+T```)
   * Create a directory (e.g. ```mkdir ~/ModNum/```) for the project, then go there (e.g. ```cd ~/ModNum/```)
   * ```git clone``` the CROCO code from the official website:
+
     ```
     git clone https://gitlab.inria.fr/croco-ocean/croco.git
     ```
@@ -15,12 +16,14 @@
 ## Compile
   
   * Create a folder where you will run the model
-    ```
+	
+	```
     mkdir ./case1
     [or mkdir -p ~/ModNum/case1]
-    ```
+	```
 
   * We need to edit the following files: ```jobcomp```, ```cppdefs.h```, ```param.h```, ```croco.in``` so copy them into the folder you just created:
+  * 
     ```
     cp ~/ModNum/croco/OCEAN/jobcomp ~/ModNum/case1/
     cp ~/ModNum/croco/OCEAN/cppdefs.h ~/ModNum/case1/
@@ -62,12 +65,14 @@ SOURCE=~/ModNum/croco/OCEAN
 ```
 
  * Edit the ```cppdefs.h``` and choose the predefined test case $\color{red}{Basin}$:
-```
-#define BASIN
-...
-#undef REGIONAL
-```
+
+	```
+	#define BASIN
+	...
+	#undef REGIONAL
+	```
  * Compile the code:
+ 
    ```
    ./jobcomp
    ```
@@ -75,8 +80,8 @@ SOURCE=~/ModNum/croco/OCEAN
 ## Run the model
  * Run the model:
    ```
-   ./croco croco.in
-   [or ./croco croco.in &> basin.out &]
+       ./croco croco.in
+       [or ./croco croco.in &> basin.out &]
    ```
 * [If you run the model in backgrounf mode (i.e. ```./croco croco.in &> basin.out &```), you can stop it with the unix command  ```kill -9 PID```, where PID is the process ID associated with croco, which you can get with the ```top``` unix command.]
    
