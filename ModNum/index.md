@@ -11,6 +11,8 @@
   [p1]: 1_Numerical_modeling_QJ.pdf
 
 
+<!---
+
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Numerical_modeling_QJ.pdf
@@ -45,7 +47,6 @@
 
   [p7]: 7_Numerical_modeling.pdf
 
-<!---
 
 **[Presentation #8 ][p8]**  
 
@@ -55,18 +56,24 @@
 
 ##  Activities
 
-<!---
+
 
 **[Activity #1 ][t1]**  
 
   [t1]: Activity1.pdf
 
 
+**[Activity #1 ][m1]**  
+
+  [m1]: Activity1.md
+  
+<!---
+
 **[Activity #2 ][t2]**  
 
   [t2]: Activity2.pdf
 
---->
+
 
 **[Activity #3 ][t3]**  
 
@@ -86,7 +93,7 @@
 **[Activity #5 ][t6]**  
 
   [t6]: Activity5.pdf
-
+--->
 
 ## Project
 
