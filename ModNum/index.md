@@ -8,20 +8,20 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Numerical_modeling_QJ.pdf
+  [p1]: 1_Numerical_modeling.pdf
 
 
 <!---
 
 **[Presentation #2 ][p2]**  
 
-  [p2]: 2_Numerical_modeling_QJ.pdf
+  [p2]: 2_Numerical_modeling.pdf
 
 
 
 **[Presentation #3 ][p3]**  
 
-  [p3]: 3_Numerical_modeling_QJ.pdf
+  [p3]: 3_Numerical_modeling.pdf
 
 
 
@@ -64,13 +64,11 @@
 
 
   
-<!---
-
 **[Activity #2 ][t2]**  
 
-  [t2]: Activity2.pdf
+  [t2]: Activity2.html
 
-
+<!---
 
 **[Activity #3 ][t3]**  
 

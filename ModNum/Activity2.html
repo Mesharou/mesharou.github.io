@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Activity1</title>
+<title>Activity2</title>
 
 
 <style type="text/css">
@@ -331,173 +331,68 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Activity 1 – Run an idealized ocean gyre</h1>
+<h1 id="toc_0">Run an idealized ocean basin II</h1>
 
-<h2 id="toc_1">Install CROCO</h2>
+<h2 id="toc_1">Barotropic vorticity equation</h2>
 
 <ul>
-<li>Open a terminal (e.g. <code>Ctrl+Alt+T</code>)</li>
-<li>Create a directory (e.g. <code>mkdir ~/ModNum/</code>) for the project, then go there (e.g. <code>cd ~/ModNum/</code>)</li>
-<li><p><code>git clone</code> the CROCO code from the official website:</p>
+<li><p>We will diagnose the barotropic vorticity equation from the simulations. See</p>
 
-<div><pre><code class="language-none">git clone https://gitlab.inria.fr/croco-ocean/croco.git</code></pre></div></li>
-<li><p>You should see the following files (using <code>ls ./croco/</code>), and the source code (i.e. the FORTRAN files <code>*.F</code>) will be in the folder <code>./croco/OCEAN/</code></p>
+<ul>
+<li>https://journals.ametsoc.org/view/journals/phoc/31/10/1520-0485<em>2001</em>031<em>2871</em>wwbcir<em>2.0.co</em>2.xml?tab_body=pdf</li>
+<li>http://jgula.fr/ModNum/diagnostics_croco.pdf</li>
+</ul></li>
+<li><p>Rerun the BASIN test case from Activity 1 with additional diagnostics</p>
 
-<p><img src="./Figure/CROCO_content.png" alt="Alt text" title="a title"></p></li>
+<ul>
+<li>Add diagnostics in the <code>cppdefs.h</code>
+<code>
+# define DIAGNOSTICS_VRT
+</code></li>
+<li>Modify the <code>croco.in</code> to define outputs for the diagnostics (you can take this one https://www.jgula.fr/ModNum/croco.in.Basin)</li>
+<li>Re-compile and rerun the simulation</li>
+</ul></li>
+<li><p><ins><strong>QUESTIONS</strong></ins>:</p>
+
+<ul>
+<li>Using your preferred language (python , matlab, julia, etc.) plot together the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation for the BASIN test case from Activity 1 [available in the <code>basin_diags_vrt_avg.nc</code>  file].</li>
+<li>What is the first order balance over the interior of the gyres?</li>
+<li>What about the western boundary current?</li>
 </ul>
 
-<h2 id="toc_2">Compile</h2>
+<h2 id="toc_2">Westward intensification of gyres (Stommel, 1948)</h2></li>
+<li><p>Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)</p></li>
+<li><p>Check what happens if you remove the latitudinal variation of the Coriolis parameter (beta-effect), to test the theory of Stommel. To change the value of beta, you need to copy and edit the file <code>ana_grid.F</code> :
+<img src="./Figure/basin_coriolis.png" alt="Alt text" title="a title"></p></li>
+<li><p>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</p>
+
+<h2 id="toc_3">Viscous boundary layer (Munk, 1950)</h2>
 
 <ul>
-<li><p>Create a folder where you will run the model</p>
-
-<div><pre><code class="language-none">mkdir ./case1
-[or mkdir -p ~/ModNum/case1]</code></pre></div></li>
-<li><p>We need to edit the following files: <code>jobcomp</code>, <code>cppdefs.h</code>, <code>param.h</code>, <code>croco.in</code> so copy them into the folder you just created:</p></li>
-<li><div><pre><code class="language-none">cp ~/ModNum/croco/OCEAN/jobcomp ~/ModNum/case1/
-cp ~/ModNum/croco/OCEAN/cppdefs.h ~/ModNum/case1/
-cp ~/ModNum/croco/OCEAN/param.h ~/ModNum/case1/
-cp ~/ModNum/croco/TEST_CASES/croco.in.Basin ~/ModNum/case1/croco.in</code></pre></div></li>
-<li><p>The model needs a fortran compiler and compatible netcdf libraries</p>
-
-<ul>
-<li>With Linux on IUEM computers:
-
-<ul>
-<li>First, unload everything:
-<code>
-module purge
-</code></li>
-<li>Then load intel compilers and netcdf library:
-<code>
-module load intel/12.1 netcdf/c-4.4.1.1-intel12 netcdf/fortran-4.4.4-intel12
-</code></li>
-<li>You can verify that modules are loaded with
-<code>
-module list
-</code></li>
-</ul></li>
-<li><p>With MacOS:</p>
-
-<ul>
-<li>You need to have gcc and netcdf installed (using homebrew or macports):
-<code>
-brew install gcc
-brew install netcdf
-</code></li>
-<li><p>You may need to edit the jobcomp to specify where to find the netcdf libraries (<em>nf-config doesn’t work with homebrew version of netcdf-fortran</em>)</p>
-
-<div><pre><code class="language-none">NETCDFLIB=&quot;-L/usr/local/lib -lnetcdf -lnetcdff&quot;
-NETCDFINC=&quot;-I/usr/local/include&quot;
-#NETCDFLIB=$(nf-config --flibs)
-#NETCDFINC=-I$(nf-config --includedir)</code></pre></div></li>
-</ul></li>
-</ul></li>
-<li><p>Go to your case and edit the <code>jobcomp</code> to specify the location of the source code:
-<code>
-SOURCE=~/ModNum/croco/OCEAN
-</code></p></li>
-<li><p>Edit the <code>cppdefs.h</code> and choose the predefined test case \(\color{red}{Basin}\):</p>
-
-<div><pre><code class="language-none">#define BASIN
-...
-#undef REGIONAL</code></pre></div></li>
-<li><p>Compile the code:</p>
-
-<div><pre><code class="language-none">./jobcomp</code></pre></div></li>
+<li>Use a weaker drag and free-slip lateral conditions (in the <code>croco.in</code>)
+<img src="./Figure/bottom_drag.png" alt="Alt text" title="a title"></li>
+<li>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</li>
 </ul>
 
-<h2 id="toc_3">Run the model</h2>
+<h2 id="toc_4">Non-linear effects</h2>
 
 <ul>
-<li>Run the model:
+<li>Check the impact of the non-linear terms (advection) by removing advection in the <code>cppdefs.h</code>
 <code>
-   ./croco croco.in
-   [or ./croco croco.in &amp;&gt; basin.out &amp;]
+# undef UV_ADV
 </code></li>
-<li><p>[If you run the model in backgrounf mode (i.e. <code>./croco croco.in &amp;&gt; basin.out &amp;</code>), you can stop it with the unix command  <code>kill -9 PID</code>, where PID is the process ID associated with croco, which you can get with the <code>top</code> unix command.]</p>
-
-<ul>
-<li><p>Look at model variables:
-<code>
-ncdump -h basin_his.nc
-</code></p></li>
-<li><p>Look at the output:
-<code>
-ncview basin_his.nc
-</code></p></li>
-</ul></li>
+<li>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</li>
 </ul>
 
-<h2 id="toc_4">Modify the namelist (croco.in)</h2>
-
-<p>See <a href="https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html">https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html</a></p>
+<h2 id="toc_5">Make it more turbulent</h2>
 
 <ul>
-<li><p>Modify the namelist (<code>croco.in</code>) to:</p>
-
-<ul>
-<li>make the model run for 20 years (you can approximate 1 year = 360 days)</li>
-<li>output of history files every 30 days</li>
-<li>outputs of variables averaged over 5 years</li>
-</ul></li>
-<li><p>Note that you also need to modify the <code>cppdefs.h</code> to output averaged files:
-<img src="./Figure/Basin_averages.png" alt="Alt text" title="a title"></p></li>
-</ul>
-
-<h2 id="toc_5">Run the model using openMP</h2>
-
-<p>To make the model run faster, we can use several processors in parellel with openMP.</p>
-
-<ul>
-<li>We need to edit the file <code>cppdefs.h</code></li>
-<li>Find the part of the file where the BASIN case is defined ( <code>#elif defined BASIN</code> )
-and change <code># undef OPENMP</code> into <code># define OPENMP</code></li>
-<li>Edit <code>param.h</code> to choose the number of processors (NPP) you want to use
-<img src="./Figure/openmp.png" alt="Alt text" title="a title"></li>
-<li>Recompile the code:
-<code>
-./jobcomp
-</code></li>
-<li>Define the number of threads to use for your computer (the number should be the same than NPP
-defined in the <code>param.h</code> file). Type in your terminal:
-
-<ul>
-<li>in bash:
-<code>
-export OMP_NUM_THREADS=8
-</code></li>
-<li>in csh/tcsh:
-<code>
-setenv OMP_NUM_THREADS 8
-</code></li>
-</ul></li>
-<li>run the model:
-<code>
-./croco croco.in
-</code></li>
-</ul>
-
-<h2 id="toc_6">QUESTIONS</h2>
-
-<ul>
-<li>About the configuration: 
-
-<ul>
-<li>What is the size of the domain? </li>
-<li>What is the depth of the domain? </li>
-<li>What is the Coriolis parameter value?</li>
-<li>What is the forcing? </li>
-</ul></li>
-</ul>
-
-<p><em>[hint: look for &quot;BASIN&quot; in the files ana_grid.F, analytical.F]</em></p>
-
-<ul>
-<li>About the circulation:
-
-<ul>
-<li>Is it similar to Stommel’s gyre (<a href="http://jgula.fr/ModNum/Stommel_1948.pdf">Stommel, 1948</a>)?</li>
+<li>Decrease the explicit dissipation in the <code>croco.in</code>
+<img src="./Figure/lateral_dissip.png" alt="Alt text" title="a title"></li>
+<li>Edit the file param.h and increase the number of points:
+<img src="./Figure/resolution.png" alt="Alt text" title="a title"></li>
+<li>Find the largest possible barotropic and baroclinic time-steps</li>
+<li>plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation</li>
 </ul></li>
 </ul>
 

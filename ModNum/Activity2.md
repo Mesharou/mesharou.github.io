@@ -1,5 +1,4 @@
 # Run an idealized ocean basin II
-Credits: Jonathan Gula (jonathan.gula@univ-brest.fr)
 
 ## Barotropic vorticity equation
 
@@ -12,7 +11,7 @@ Credits: Jonathan Gula (jonathan.gula@univ-brest.fr)
         ```
         # define DIAGNOSTICS_VRT
         ```
-      * Modify the ```croco.in``` (you can take this one https://www.jgula.fr/ModNum/croco.in.Basin)
+      * Modify the ```croco.in``` to define outputs for the diagnostics (you can take this one https://www.jgula.fr/ModNum/croco.in.Basin)
       * Re-compile and rerun the simulation
 
   * <ins>**QUESTIONS**</ins>:
@@ -23,13 +22,13 @@ Credits: Jonathan Gula (jonathan.gula@univ-brest.fr)
  ## Westward intensification of gyres (Stommel, 1948)
   * Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)
   * Check what happens if you remove the latitudinal variation of the Coriolis parameter (beta-effect), to test the theory of Stommel. To change the value of beta, you need to copy and edit the file ```ana_grid.F``` :
-    ![Alt text](https://github.com/quentinjamet/Tuto/blob/main/Figure/basin_coriolis.png "a title")
+    ![Alt text](./Figure/basin_coriolis.png "a title")
   * Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.
     
 
  ## Viscous boundary layer (Munk, 1950)
    * Use a weaker drag and free-slip lateral conditions (in the ```croco.in```)
-     ![Alt text](https://github.com/quentinjamet/Tuto/blob/main/Figure/bottom_drag.png "a title")
+     ![Alt text](./Figure/bottom_drag.png "a title")
    * Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.
      
 
@@ -42,9 +41,9 @@ Credits: Jonathan Gula (jonathan.gula@univ-brest.fr)
 
  ## Make it more turbulent
    * Decrease the explicit dissipation in the ```croco.in```
-     ![Alt text](https://github.com/quentinjamet/Tuto/blob/main/Figure/lateral_dissip.png "a title")
+     ![Alt text](./Figure/lateral_dissip.png "a title")
    * Edit the file param.h and increase the number of points:
-     ![Alt text](https://github.com/quentinjamet/Tuto/blob/main/Figure/resolution.png "a title")
+     ![Alt text](./Figure/resolution.png "a title")
    * Find the largest possible barotropic and baroclinic time-steps
    * plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation
 

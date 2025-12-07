@@ -71,6 +71,7 @@ SOURCE=~/ModNum/croco/OCEAN
 	...
 	#undef REGIONAL
 	```
+	
  * Compile the code:
  
    ```
@@ -96,7 +97,8 @@ SOURCE=~/ModNum/croco/OCEAN
    ```
 
 ## Modify the namelist (croco.in)
-See https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html
+See [https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html](https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html)
+
  * Modify the namelist (```croco.in```) to:
     * make the model run for 20 years (you can approximate 1 year = 360 days)
     * output of history files every 30 days
@@ -106,6 +108,9 @@ See https://croco-ocean.gitlabpages.inria.fr/croco_doc/tutos/tutos.08.run.html
    ![Alt text](./Figure/Basin_averages.png "a title")
 
 ## Run the model using openMP
+
+To make the model run faster, we can use several processors in parellel with openMP.
+ 
  * We need to edit the file ```cppdefs.h```
  * Find the part of the file where the BASIN case is defined ( ```#elif defined BASIN``` )
    and change ```# undef OPENMP``` into ```# define OPENMP```
@@ -132,10 +137,12 @@ defined in the ```param.h``` file). Type in your terminal:
 
 ## QUESTIONS
  * About the configuration: 
-   * What is the forcing?
-   * What is the Coriolis parameter?
-   * What is the boundary condition?
-   * What is the bottom condition?
-   * What is the accuracy of the advection scheme?
+ 	* What is the size of the domain? 
+ 	* What is the depth of the domain? 
+ 	* What is the Coriolis parameter value?
+ 	* What is the forcing? 
+
+*[hint: look for "BASIN" in the files ana_grid.F, analytical.F]*
+
  * About the circulation:
-    * Is it similar to Stommel’s gyre (http://ido.at.fcen.uba.ar/index_archivos/Stommel_1948.pdf)?
+    * Is it similar to Stommel’s gyre ([Stommel, 1948](http://jgula.fr/ModNum/Stommel_1948.pdf))?
