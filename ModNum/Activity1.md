@@ -61,7 +61,7 @@
           ```
  * Go to your case and edit the ```jobcomp``` to specify the location of the source code:
 ```
-SOURCE=~/ModNum/croco/OCEAN
+SOURCE1=~/ModNum/croco/OCEAN
 ```
 
  * Edit the ```cppdefs.h``` and choose the predefined test case $\color{red}{Basin}$:
