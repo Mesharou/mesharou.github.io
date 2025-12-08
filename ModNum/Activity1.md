@@ -145,4 +145,4 @@ defined in the ```param.h``` file). Type in your terminal:
 *[hint: look for "BASIN" in the files ana_grid.F, analytical.F]*
 
  * About the circulation:
-    * Is it similar to Stommel’s gyre ([Stommel, 1948](http://jgula.fr/ModNum/Stommel_1948.pdf))?
+    * Is it similar to Stommel’s gyre ([Stommel, 1948](http://jgula.fr/ModNum/Stommel48.pdf))?
