@@ -38,10 +38,10 @@ rho0:
       1025.
 
 bottom_drag:     RDRG(m/s),      RDRG2, Zob [m],  Cdb_min, Cdb_max
-                 3.e-4             0.      0.         0.      0. 
+                 1.e-2             0.      0.         0.      0. 
 
 gamma2:
-                 -1.
+                 1.
 
 lin_EOS_cff:  R0 [kg/m3], T0 [Celsius], S0 [PSU], TCOEF [1/Celsius], SCOEF [1/PSU] 
               30.         0.            0.        0.28                0.

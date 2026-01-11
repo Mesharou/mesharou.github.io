@@ -10,14 +10,14 @@
 
   [p1]: 1_Numerical_modeling.pdf
 
-
-<!---
-
 **[Presentation #2 ][p2]**  
 
   [p2]: 2_Numerical_modeling.pdf
 
 
+
+
+<!---
 
 **[Presentation #3 ][p3]**  
 
@@ -139,7 +139,7 @@
 
 **[Diagnostics Croco ][p31]**  
 
-  [p31]: diagnostics_croco.pdf
+  [p31]: diagnostics_barotropic_vorticity.pdf
   
 
 **[Advective schemes ][p32]**  
