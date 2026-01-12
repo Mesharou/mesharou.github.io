@@ -90,12 +90,15 @@
   [t6]: Activity5.pdf
 --->
 
+
+<!---
 ## Project
 
 **[Project][p0]**  
 
   [p0]: projets_modnum2425.pdf
 
+--->
 
 ##  Material 
 
@@ -110,11 +113,12 @@
 
   [c32]: croco_tools-v1.1.tar.gz
   
-
+<!---
 **[notebook barotropic vorticity][c31]**  
 
   [c31]: barotropic_vorticity_balance.ipynb
   
+--->
 
 **[example_croco.ipynb][c33]**  
 
@@ -134,7 +138,8 @@
 
   [c36]: xcroco.py
   
-  
+
+
 ###  Doc
 
 **[Diagnostics Croco ][p31]**  

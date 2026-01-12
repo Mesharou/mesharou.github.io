@@ -11,16 +11,17 @@ The barotropic vorticity equation can be computed online using the option ```DIA
 ## Westward intensification of gyres [Stommel, 1948]
  
    * **Run the BASIN test case from Activity 1 with additional diagnostics and in the Stommel configuration:**
-   	   * Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)
-      * Add diagnostics by including in the file```cppdefs.h``` the following line (in the section corresponding to your BASIN test case):
+   
+       * Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)
+       * Add diagnostics by including in the file```cppdefs.h``` the following line (in the section corresponding to your BASIN test case):
       
         ```
         # define DIAGNOSTICS_VRT
         ```
-      * Modify the ```croco.in``` to define outputs for the diagnostics (take this one [croco.in](https://www.jgula.fr/ModNum/croco.in.Basin))
+       * Modify the ```croco.in``` to define outputs for the diagnostics (take this one [croco.in](https://www.jgula.fr/ModNum/croco.in.Basin))
 
       
-   	  * Remove the non-linear terms (advection) by undefining the following key in the ```cppdefs.h```:
+   	   * Remove the non-linear terms (advection) by undefining the following key in the ```cppdefs.h```:
       
 	     ```
 	    # undef UV_ADV
@@ -88,11 +89,11 @@ tracer_diff2: TNU2       [m^2/sec]
 #if defined BASIN
       parameter (LLm0=120,   MMm0=100,   N=10)
         ```
-       
-   * Find the largest possible barotropic and baroclinic time-steps
+   * Estimate the largest theoretical barotropic and baroclinic time-steps for the default case [BASIN from Activity 2]. You can find more information [here]( https://croco-ocean.gitlabpages.inria.fr/croco_doc/model/model.numerics.timestepping.html)    
+   * Find the largest possible barotropic and baroclinic time-steps by running the code.
    * plot the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation
 
    
- ## Additional question
+## Additional question
 
-	* You can similarly check the kinetic energy budget for the gyre by using the option ```DIAGNOSTICS_KE```
+* You can similarly check the kinetic energy budget for the gyre by using the option ```DIAGNOSTICS_KE```

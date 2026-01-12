@@ -335,64 +335,90 @@ kbd {
 
 <h2 id="toc_1">Barotropic vorticity equation</h2>
 
-<ul>
-<li><p>We will diagnose the barotropic vorticity equation from the simulations. See</p>
+<p>We will revisit the results of  <a href="https://www.jgula.fr/ModNum/Stommel48.pdf">Stommel</a> and <a href="https://www.jgula.fr/ModNum/Munk50.pdf">Munk</a> by diagnosing the gyre dynamics through the use of the barotropic vorticity equation. </p>
+
+<p>The barotropic vorticity equation can be computed online using the option <code>DIAGNOSTICS_VRT</code>. The different terms are presented in <a href="http://jgula.fr/ModNum/diagnostics_barotropic_vorticity.pdf">diagnostics_barotropic_vorticity.pdf</a></p>
+
+<h2 id="toc_2"></h2>
+
+<h2 id="toc_3">Westward intensification of gyres [Stommel, 1948]</h2>
 
 <ul>
-<li>https://journals.ametsoc.org/view/journals/phoc/31/10/1520-0485<em>2001</em>031<em>2871</em>wwbcir<em>2.0.co</em>2.xml?tab_body=pdf</li>
-<li>http://jgula.fr/ModNum/diagnostics_croco.pdf</li>
+<li><p><strong>Run the BASIN test case from Activity 1 with additional diagnostics and in the Stommel configuration:</strong></p>
+
+<ul>
+<li>Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)</li>
+<li><p>Add diagnostics by including in the file<code>cppdefs.h</code> the following line (in the section corresponding to your BASIN test case):</p>
+
+<div><pre><code class="language-none"># define DIAGNOSTICS_VRT</code></pre></div></li>
+<li><p>Modify the <code>croco.in</code> to define outputs for the diagnostics (take this one <a href="https://www.jgula.fr/ModNum/croco.in.Basin">croco.in</a>)</p></li>
+<li><p>Remove the non-linear terms (advection) by undefining the following key in the <code>cppdefs.h</code>:</p>
+
+<div><pre><code class="language-none"># undef UV_ADV</code></pre></div></li>
+<li><p>Re-compile and rerun the simulation</p></li>
 </ul></li>
-<li><p>Rerun the BASIN test case from Activity 1 with additional diagnostics</p>
+<li><p><strong>Plot and analyze the barotropic vorticity budget:</strong></p>
 
 <ul>
-<li>Add diagnostics in the <code>cppdefs.h</code>
-<code>
-# define DIAGNOSTICS_VRT
-</code></li>
-<li>Modify the <code>croco.in</code> to define outputs for the diagnostics (you can take this one https://www.jgula.fr/ModNum/croco.in.Basin)</li>
-<li>Re-compile and rerun the simulation</li>
-</ul></li>
-<li><p><ins><strong>QUESTIONS</strong></ins>:</p>
-
-<ul>
-<li>Using your preferred language (python , matlab, julia, etc.) plot together the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation for the BASIN test case from Activity 1 [available in the <code>basin_diags_vrt_avg.nc</code>  file].</li>
+<li>Using your preferred language (python , matlab, julia, etc.) plot together the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation for the BASIN test case from Activity 1 [available in the <code>basin_diags_vrt_avg.nc</code>  file].</li>
 <li>What is the first order balance over the interior of the gyres?</li>
 <li>What about the western boundary current?</li>
 </ul>
 
-<h2 id="toc_2">Westward intensification of gyres (Stommel, 1948)</h2></li>
-<li><p>Copy the BASIN test case from Activity 1 and create a new test case: (for example case2)</p></li>
-<li><p>Check what happens if you remove the latitudinal variation of the Coriolis parameter (beta-effect), to test the theory of Stommel. To change the value of beta, you need to copy and edit the file <code>ana_grid.F</code> :
-<img src="./Figure/basin_coriolis.png" alt="Alt text" title="a title"></p></li>
-<li><p>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</p>
-
-<h2 id="toc_3">Viscous boundary layer (Munk, 1950)</h2>
+<h2 id="toc_4">Impact of the Beta-effect:</h2>
 
 <ul>
-<li>Use a weaker drag and free-slip lateral conditions (in the <code>croco.in</code>)
-<img src="./Figure/bottom_drag.png" alt="Alt text" title="a title"></li>
-<li>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</li>
+<li><p>Check what happens if you remove the latitudinal variation of the Coriolis parameter (beta-effect) from the previous case, to test the theory of Stommel. To change the value of beta, you need to copy and edit the file <code>ana_grid.F</code> :</p>
+
+<div><pre><code class="language-none"># if defined BASIN
+                     depth=5000.
+                     f0=1.E-4 
+                     beta=0</code></pre></div></li>
+<li><p>Plot the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation. Compare them with the previous one.</p></li>
 </ul>
 
-<h2 id="toc_4">Non-linear effects</h2>
+<h2 id="toc_5">Viscous boundary layer (Munk, 1950)</h2>
 
 <ul>
-<li>Check the impact of the non-linear terms (advection) by removing advection in the <code>cppdefs.h</code>
-<code>
-# undef UV_ADV
-</code></li>
-<li>Plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation. Compare them with the previous one.</li>
+<li><p>Put back the beta-effect. But use now a weaker drag and no-slip lateral conditions (in the <code>croco.in</code>)</p>
+
+<div><pre><code class="language-none">bottom_drag:     RDRG(m/s),      RDRG2, Zob [m],  Cdb_min, Cdb_max
+                 3.e-4             0.      0.         0.      0.
+gamma2:
+                 -1.</code></pre></div></li>
+<li><p>Plot the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation. Compare them with the previous one.</p></li>
 </ul>
 
-<h2 id="toc_5">Make it more turbulent</h2>
+<h2 id="toc_6">Non-linear effects</h2>
 
 <ul>
-<li>Decrease the explicit dissipation in the <code>croco.in</code>
-<img src="./Figure/lateral_dissip.png" alt="Alt text" title="a title"></li>
-<li>Edit the file param.h and increase the number of points:
-<img src="./Figure/resolution.png" alt="Alt text" title="a title"></li>
-<li>Find the largest possible barotropic and baroclinic time-steps</li>
-<li>plot the different terms of the barotropic vorticity budget averaged over the last 5 years of the simulation</li>
+<li><p>Starting form the previous case, put back the non-linear terms (advection) by defining the following key in the <code>cppdefs.h</code></p>
+
+<div><pre><code class="language-none"># define UV_ADV</code></pre></div></li>
+<li><p>Plot the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation. Compare them with the previous one.</p></li>
+</ul>
+
+<h2 id="toc_7">Make it more turbulent</h2>
+
+<ul>
+<li><p>Decrease the explicit dissipation in the <code>croco.in</code></p>
+
+<div><pre><code class="language-none">lateral_visc:   VISC2    [m^2/sec ]
+         100.  0.
+tracer_diff2: TNU2       [m^2/sec]
+         100. 0.</code></pre></div></li>
+<li><p>Edit the file <code>param.h</code> and increase the number of points:</p>
+
+<div><pre><code class="language-none">#if defined BASIN
+parameter (LLm0=120,   MMm0=100,   N=10)</code></pre></div></li>
+<li><p>Find the largest possible barotropic and baroclinic time-steps</p></li>
+<li><p>plot the different terms of the barotropic vorticity budget averaged over the last 2 years of the simulation</p></li>
+</ul>
+
+<h2 id="toc_8">Additional question</h2>
+
+<ul>
+<li>You can similarly check the kinetic energy budget for the gyre by using the option <code>DIAGNOSTICS_KE</code></li>
 </ul></li>
 </ul>
 
