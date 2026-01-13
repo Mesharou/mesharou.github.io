@@ -16,9 +16,6 @@
 
 
 
-
-<!---
-
 **[Presentation #3 ][p3]**  
 
   [p3]: 3_Numerical_modeling.pdf
@@ -30,6 +27,9 @@
   [p4]: 4_Numerical_modeling.pdf
 
 
+
+
+<!---
 
 
 **[Presentation #5 ][p5]**  
@@ -68,13 +68,13 @@
 
   [t2]: Activity2.html
 
-<!---
 
 **[Activity #3 ][t3]**  
 
-  [t3]: Activity3.pdf
+  [t3]: Activity3.html
   
 
+<!---
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
