@@ -3,6 +3,15 @@
 #  Fluids
 
 
+##  Presentations
+
+
+**[#1 Lesson 1 ][p1]**  
+
+  [p1]: Fluid1_2025.pdf
+
+
+
 ##  Activities (TP)
 
 
@@ -13,7 +22,6 @@
 **[RSW code][a2]**  
 
   [a2]: rsw.py
-  
   
 **[Topography][a3]**  
 
