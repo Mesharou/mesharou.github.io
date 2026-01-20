@@ -29,12 +29,13 @@
 
 
 
-<!---
-
-
 **[Presentation #5 ][p5]**  
 
   [p5]: 5_Numerical_modeling.pdf
+
+
+
+<!---
 
 
 **[Presentation #6 ][p6]**  
@@ -91,14 +92,14 @@
 --->
 
 
-<!---
+
 ## Project
 
 **[Project][p0]**  
 
-  [p0]: projets_modnum2425.pdf
+  [p0]: projets_modnum2526.pdf
 
---->
+
 
 ##  Material 
 
