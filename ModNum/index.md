@@ -123,7 +123,7 @@
 
 **[example_croco.ipynb][c33]**  
 
-  [c33]: https://github.com/Mesharou/mesharou.github.io/ModNum/Croco/example_croco.ipynb
+  [c33]: https://github.com/Mesharou/mesharou.github.io/blob/master/ModNum/example_croco.ipynb
   
     
 **[Python tools][c34]**  
@@ -132,7 +132,7 @@
   
 **[example_croco\_array.ipynb][c35]**  
 
-  [c35]: https://github.com/Mesharou/mesharou.github.io/ModNum/Croco/example_croco_xarray.ipynb
+  [c35]: https://github.com/Mesharou/mesharou.github.io/blob/master/ModNum/example_croco_xarray.ipynb
 
       
 **[Functions for xarray][c36]**  
