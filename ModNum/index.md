@@ -35,14 +35,14 @@
 
 
 
-<!---
+
 
 
 **[Presentation #6 ][p6]**  
 
   [p6]: 6_Numerical_modeling.pdf
 
-
+<!---
 
 **[Presentation #7 ][p7]**  
 
@@ -79,12 +79,13 @@
 **[Activity #4 ][t4]**  
 
   [t4]: Activity4.pdf
-  
+--->
 
 **[Summary about gyre vorticity balances with CROCO][t5]**  
 
   [t5]: modelling.pdf
   
+<!---
 
 **[Activity #5 ][t6]**  
 
@@ -114,12 +115,11 @@
 
   [c32]: croco_tools-v1.1.tar.gz
   
-<!---
+
 **[notebook barotropic vorticity][c31]**  
 
   [c31]: barotropic_vorticity_balance.ipynb
-  
---->
+
 
 **[example_croco.ipynb][c33]**  
 
