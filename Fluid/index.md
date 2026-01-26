@@ -23,9 +23,15 @@
 
   [a2]: rsw.py
   
-**[Topography][a3]**  
+**[code to read .npz][a3]**  
 
-  [a3]: topography.pickle
+  [a3]: read_npz.ipynb
+  
+  
+  
+**[Topography][a4]**  
+
+  [a4]: topography.pickle
   
   
   

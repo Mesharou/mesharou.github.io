@@ -96,6 +96,8 @@ vV = np.zeros((ny+1, nx))
 hC = np.zeros((ny, nx))
 H = np.zeros((ny, nx))
 
+hCt = []
+
 # coordinates of the cells centers 'C' and cell corners 'F'
 xC = (0.5+np.arange(nx))*dx
 xF = np.arange(nx+1)*dx
@@ -511,6 +513,7 @@ Potene = np.zeros((nt,))
 PVcont = np.zeros((nt,))
 
 hC[:,:] = hC0
+times = np.arange(nt)
 
 state = [hC, uU, vV]
 pv = pvC(hC, uU, vV)
@@ -578,6 +581,8 @@ for kt in range(nt):
     if kt % plotperiod == 0:
         fig.update()
 
+    hCt.append(hC.copy())
+
     Volume[kt] = np.mean(hC.ravel())
     Energy[kt] = np.mean(energy.ravel())
     Potene[kt] = np.mean(pe.ravel())
@@ -595,7 +600,15 @@ if generate_mp4:
     fig.mov.finalize()
 plt.savefig(case + 'finalstate.pdf')
 
-np.savez(case + 'finalstate', arr1=xC,arr2=yC,arr3=hC)
+np.savez(case + 'allstates',
+         arr1=times,
+         arr2=xC,
+         arr3=yC,
+         arr4=hCt,
+         arr5=H,
+         arr6=uU,
+         arr7=vV)
+
 
 plt.figure(figsize=(10, 6))
 time = np.arange(nt)*dt
