@@ -42,12 +42,13 @@
 
   [p6]: 6_Numerical_modeling.pdf
 
-<!---
+
 
 **[Presentation #7 ][p7]**  
 
   [p7]: 7_Numerical_modeling.pdf
-
+  
+<!---
 
 **[Presentation #8 ][p8]**  
 
@@ -75,11 +76,10 @@
   [t3]: Activity3.html
   
 
-<!---
 **[Activity #4 ][t4]**  
 
-  [t4]: Activity4.pdf
---->
+  [t4]: Activity4.html
+
 
 **[Summary about gyre vorticity balances with CROCO][t5]**  
 
@@ -106,15 +106,7 @@
 
 ###  Code
 
-**[CROCO ][c30]**  
 
-  [c30]: croco.tar.gz
-
-
-**[CROCO TOOLS ][c32]**  
-
-  [c32]: croco_tools-v1.1.tar.gz
-  
 
 **[notebook barotropic vorticity][c31]**  
 
@@ -138,6 +130,8 @@
 **[Functions for xarray][c36]**  
 
   [c36]: xcroco.py
+  
+  
   
 
 
