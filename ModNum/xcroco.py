@@ -101,7 +101,7 @@ def add_vertical_coord(ds):
         ds['sc_r'] = xr.DataArray(ds.sc_r,  dims=["s_rho"])
         ds['sc_w'] = xr.DataArray(ds.sc_w,  dims=["s_w"])      
         
-    ds['Cs_r'] = xr.DataArray(ds.Cs_r,  dims=["s_rho"])
+    ds['Cs_r'] = xr.DataArray(ds.Cs_rho,  dims=["s_rho"])
     ds['Cs_w'] = xr.DataArray(ds.Cs_w,  dims=["s_w"]) 
         
         
