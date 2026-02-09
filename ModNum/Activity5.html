@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>index</title>
+<title>Activity5</title>
 
 
 <style type="text/css">
@@ -331,85 +331,190 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Numerical Modelling</h1>
+<h1 id="toc_0">V - Set up and run your own regional configuration</h1>
 
-<h2 id="toc_1">Presentations</h2>
+<p>We are going to redo the same thing than in Activity 4, but adapt it to a new simulation (instead of the default Benguela case) tat will be used for you <a href="https://www.jgula.fr/ModNum/projets_modnum2526.pdf">project</a>.</p>
 
-<p><strong><a href="1_Numerical_modeling.pdf">Presentation #1 </a></strong>  </p>
+<p>The detailed explanations are available <a href="https://croco-ocean.gitlabpages.inria.fr/croco_pytools/">here</a>. The main steps and the instructions specific to the IUEM computers are explained below.</p>
 
-<p><strong><a href="2_Numerical_modeling.pdf">Presentation #2 </a></strong>  </p>
+<h2 id="toc_1">Download the croco tools</h2>
 
-<p><strong><a href="3_Numerical_modeling.pdf">Presentation #3 </a></strong>  </p>
+<p>see <a href="https://croco-ocean.gitlabpages.inria.fr/croco_pytools/prepro/tuto.env.html">tuto.env.html</a>. <em>This part is identical to te one in Activity 4</em></p>
 
-<p><strong><a href="4_Numerical_modeling.pdf">Presentation #4 </a></strong>  </p>
+<ul>
+<li>Create a folder where you will run the model and a folder where you will put the grd, ini and bry files.</li>
+</ul>
 
-<p><strong><a href="5_Numerical_modeling.pdf">Presentation #5 </a></strong>  </p>
+<div><pre><code class="language-none">mkdir -p ~/ModNum/case_project/CROCO_FILES</code></pre></div>
 
-<p><strong><a href="6_Numerical_modeling.pdf">Presentation #6 </a></strong>  </p>
+<ul>
+<li>Download the croco pytools:</li>
+</ul>
 
-<p><strong><a href="7_Numerical_modeling.pdf">Presentation #7 </a></strong>  </p>
+<div><pre><code class="language-none">cd ~/ModNum/case_project/
+git clone https://gitlab.inria.fr/croco-ocean/croco_pytools.git</code></pre></div>
 
-<!---
+<ul>
+<li>Create a python environment (for example with mamba):</li>
+</ul>
 
-**[Presentation #8 ][p8]**  
+<div><pre><code class="language-none">cd ./croco_pytools
+module purge; module load mamba
+mamba create -p ~/.mamba/croco_pyenv -f env.yml
+mamba activate ~/.mamba/croco_pyenv</code></pre></div>
+
+<ul>
+<li>Compile Fortran dependencies:</li>
+</ul>
+
+<div><pre><code class="language-none">cd prepro/Modules/tools_fort_routines
+make clean
+make</code></pre></div>
+
+<h2 id="toc_2">Prepare the grid</h2>
+
+<div><pre><code class="language-none">cd ~/ModNum/case_project/croco_pytools/prepro</code></pre></div>
+
+<ul>
+<li>Download the example file project.ini containing the requested user-defined parameters:</li>
+</ul>
+
+<div><pre><code class="language-none">wget jgula.fr/ModNum/project.ini</code></pre></div>
+
+<ul>
+<li><p>Modify the [Grid_Position] parameters to select the region of your choice. 
+Eventually modify the time period (keep it short - e.g. 3 months) for the first test. You can increase it later.</p></li>
+<li><p>Create the grid:</p></li>
+</ul>
+
+<div><pre><code class="language-none">python make_grid.py project.ini</code></pre></div>
+
+<h2 id="toc_3">Download the datasets</h2>
+
+<p>see <a href="https://croco-ocean.gitlabpages.inria.fr/croco_pytools/prepro/tuto.download.html">tuto.download.html</a></p>
+
+<p>We will need an ocean reanalysis (GLORYS from Mercator), and atmospheric data (ERA5). </p>
+
+<h3 id="toc_4">GLORYS</h3>
+
+<p>You first need to create a CMEMS account <a href="https://help.marine.copernicus.eu/en/articles/4220332-how-to-sign-up-for-copernicus-marine-service">here</a>. You will need the login and password to download the data. Then you just have to use the following script:</p>
+
+<div><pre><code class="language-none">python download_mercator.py project.ini</code></pre></div>
+
+<h3 id="toc_5">ERA5</h3>
+
+<p>You first need to create a ECMWF account <a href="https://accounts.ecmwf.int/auth/realms/ecmwf/protocol/openid-connect/auth?client_id=cds&amp;scope=openid%20email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcds.climate.copernicus.eu%2Fapi%2Fauth%2Fcallback%2Fkeycloak&amp;state=Gf_3RNOMHh5FBro05lwCvo0s9sQcryv_m1BOo4RFPQ4&amp;code_challenge=YNm32BjkLl4A1UPFClKvIkkH8cGOysvW71JhNAHt4U0&amp;code_challenge_method=S256">here</a>. </p>
+
+<p>You will then need to setup the <a href="https://cds.climate.copernicus.eu/how-to-api">API</a> by creating a file on your computer called <code>~/.cdsapirc</code> containing the following:</p>
+
+<div><pre><code class="language-none">url: https://cds.climate.copernicus.eu/api
+key: &lt;PERSONAL-ACCESS-TOKEN&gt;</code></pre></div>
+
+<p>where <code>&lt;PERSONAL-ACCESS-TOKEN&gt;</code> has to be replaced by the key you will find <a href="https://cds.climate.copernicus.eu/how-to-api">here</a> once you&#39;re logged in. </p>
+
+<p>Then you just have to use the following script:</p>
+
+<div><pre><code class="language-none">python download_era5.py project.ini</code></pre></div>
+
+<h2 id="toc_6">Create the INI/BRY files</h2>
+
+<ul>
+<li>Create the initial file:</li>
+</ul>
+
+<div><pre><code class="language-none">python make_ini.py project.ini</code></pre></div>
+
+<ul>
+<li>Create the boundary file:</li>
+</ul>
+
+<div><pre><code class="language-none">python make_bry.py project.ini</code></pre></div>
+
+<ul>
+<li>You should now see the corresponding files:</li>
+</ul>
+
+<div><pre><code class="language-none">ls ~/ModNum/case_project/CROCO_FILES
+
+croco_grd.nc
+croco_ini_mercator_Y2023M01.nc
+croco_bry_mercator_.nc</code></pre></div>
+
+<h2 id="toc_7">Compile and run your own case</h2>
+
+<ul>
+<li><p>Download and untar the croco code if you don’t have it (see <a href="https://www.jgula.fr/ModNum/Activity1.html">Activity 1</a>).</p></li>
+<li><p>We need the following files: <code>jobcomp</code>, <code>cppdefs.h</code>, <code>param.h</code>, <code>croco.in</code> so copy them into the folder you just created:</p>
+
+<div><pre><code class="language-none">cp ~/ModNum/croco/OCEAN/jobcomp ~/ModNum/case_project/
+cp ~/ModNum/croco/OCEAN/cppdefs.h ~/ModNum/case_project/
+cp ~/ModNum/croco/OCEAN/param.h ~/ModNum/case_project/
+cp ~/ModNum/croco/OCEAN/croco.in ~/ModNum/case_project/</code></pre></div></li>
+<li><p>You might need to edit the <code>jobcomp</code> to specify the location of the source code and edit the <code>cppdefs.h</code> and <code>param.h</code> to run the model using openMP (see <a href="https://www.jgula.fr/ModNum/Activity1.html">Activity 1</a>).</p></li>
+<li><p>You also need to modify <code>cppdefs.h</code> to use the ERA5 dataset:</p></li>
+</ul>
+
+<div><pre><code class="language-none">#  define  ONLINE
+#  define  ERA_ECMWF</code></pre></div>
+
+<ul>
+<li><p>You also need to modify <code>cppdefs.h</code> and <code>param.h</code> to specify the name of the simulation and the number of grid points to use (depending on the size of your grid in croco_grd.nc).</p></li>
+<li><p>Compile the code:</p></li>
+</ul>
+
+<div><pre><code class="language-none">mamba deactivate 
+module load intel/12.1 netcdf/c-4.4.1.1-intel12 netcdf/fortran-4.4.4-intel12
+./jobcomp</code></pre></div>
+
+<ul>
+<li>We finally need to modify <code>croco.in</code> to specify the timestep (depending on your grid) and the location of the grd/bry/ini files and the ERA5 dataset, and specify the duration of the run.</li>
+</ul>
+
+<div><pre><code class="language-none">time_stepping: NTIMES   dt[sec]  NDTFAST  NINFO
+                8760      3600      60      1
+
+...
 
 
+boundary: filename
+    CROCO_FILES/croco_bry_mercator_.nc
+initial: NRREC / filename
+          1
+    CROCO_FILES/croco_ini_mercator_.nc
+restart:          NRST, NRPFRST / filename
+                   8760    -1
+    CROCO_FILES/croco_rst.nc
 
---->
+history: LDEFHIS, NWRT, NRPFHIS / filename
+            T      240     0
+    CROCO_FILES/croco_his.nc
+averages: NTSAVG, NAVG, NRPFAVG / filename
+            1      720     0
+    CROCO_FILES/croco_avg.nc
+...
 
-<h2 id="toc_2">Activities</h2>
+online:    byear  bmonth recordsperday byearend bmonthend / data path
+           2023   1      4             2025     3
+DATA/DATA_METEO/ERA5/
 
-<p><strong><a href="Activity1.html">Activity #1 </a></strong>  </p>
+</code></pre></div>
 
-<p><strong><a href="Activity2.html">Activity #2 </a></strong>  </p>
+<ul>
+<li><p>run the model:
+<code>
+./croco croco.in
+</code></p></li>
+<li><p>You should now see:</p></li>
+</ul>
 
-<p><strong><a href="Activity3.html">Activity #3 </a></strong>  </p>
+<div><pre><code class="language-none">ls ~/ModNum/case_project/CROCO_FILES
 
-<p><strong><a href="Activity4.html">Activity #4 </a></strong>  </p>
+croco_his.nc
+croco_avg.nc</code></pre></div>
 
-<p><strong><a href="modelling.pdf">Summary about gyre vorticity balances with CROCO</a></strong>  </p>
+<h2 id="toc_8">Analyze the simulation:</h2>
 
-<p><strong><a href="Activity5.html">Activity #5 </a></strong>  </p>
-
-<h2 id="toc_3">Project</h2>
-
-<p><strong><a href="projets_modnum2526.pdf">Project</a></strong>  </p>
-
-<h2 id="toc_4">Material</h2>
-
-<h3 id="toc_5">Code</h3>
-
-<p><strong><a href="barotropic_vorticity_balance.ipynb">notebook barotropic vorticity</a></strong>  </p>
-
-<p><strong><a href="https://github.com/Mesharou/mesharou.github.io/blob/master/ModNum/example_croco.ipynb">example_croco.ipynb</a></strong>  </p>
-
-<p><strong><a href="tools.py">Python tools</a></strong>  </p>
-
-<p><strong><a href="https://github.com/Mesharou/mesharou.github.io/blob/master/ModNum/example_croco_xarray.ipynb">example_croco_array.ipynb</a></strong>  </p>
-
-<p><strong><a href="xcroco.py">Functions for xarray</a></strong>  </p>
-
-<h3 id="toc_6">Doc</h3>
-
-<p><strong><a href="diagnostics_barotropic_vorticity.pdf">Diagnostics Croco </a></strong>  </p>
-
-<p><strong><a href="formation_adv_diff.pdf">Advective schemes </a></strong>  </p>
-
-<p><strong><a href="http://www.dam.brown.edu/people/alcyew/handouts/numdiff.pdf">Finite differences </a></strong>  </p>
-
-<h3 id="toc_7">Articles</h3>
-
-<p><strong><a href="Stommel48.pdf">Stommel, 1948 </a></strong></p>
-
-<p><strong><a href="Munk50.pdf">Munk, 1950 </a></strong></p>
-
-<p><strong><a href="HughesDeCuevas01.pdf">Hughes and DeCuevas, 2001 </a></strong></p>
-
-<p><strong><a href="Griffiesetal00.pdf">Griffies et al, 2000 </a></strong></p>
-
-<p><strong><a href="ShchepetkinMcWilliams05.pdf">Shchepetkin &amp; McWilliams, 2005 </a></strong> </p>
-
-<p><strong><a href="DeMarezLeCorre20.pdf">De Marez &amp; LeCorre, 2020 </a></strong> </p>
+<p>Follow-up with the instructions in the <a href="https://www.jgula.fr/ModNum/projets_modnum2526.pdf">project</a></p>
 
 
 

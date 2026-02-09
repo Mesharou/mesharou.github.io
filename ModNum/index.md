@@ -85,12 +85,12 @@
 
   [t5]: modelling.pdf
   
-<!---
+
 
 **[Activity #5 ][t6]**  
 
-  [t6]: Activity5.pdf
---->
+  [t6]: Activity5.html
+
 
 
 
