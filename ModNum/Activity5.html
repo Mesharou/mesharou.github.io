@@ -355,19 +355,17 @@ kbd {
 git clone https://gitlab.inria.fr/croco-ocean/croco_pytools.git</code></pre></div>
 
 <ul>
-<li>Create a python environment (for example with mamba):</li>
+<li>Load your previously installed python environment (for example with mamba):</li>
 </ul>
 
-<div><pre><code class="language-none">cd ./croco_pytools
-module purge; module load mamba
-mamba create -p ~/.mamba/croco_pyenv -f env.yml
+<div><pre><code class="language-none">module purge; module load mamba
 mamba activate ~/.mamba/croco_pyenv</code></pre></div>
 
 <ul>
 <li>Temporary fix:</li>
 </ul>
 
-<div><pre><code class="language-none">mamba install  &quot;setuptools&lt;70&quot;</code></pre></div>
+<div><pre><code class="language-none">mamba install  &quot;setuptools&lt;81&quot;</code></pre></div>
 
 <ul>
 <li>Compile Fortran dependencies:</li>
@@ -417,6 +415,8 @@ Eventually modify the time period (keep it short - e.g. 3 months) for the first 
 key: &lt;PERSONAL-ACCESS-TOKEN&gt;</code></pre></div>
 
 <p>where <code>&lt;PERSONAL-ACCESS-TOKEN&gt;</code> has to be replaced by the key you will find <a href="https://cds.climate.copernicus.eu/how-to-api">here</a> once you&#39;re logged in. </p>
+
+<p>You will also need to accept the license at the bottom of this <a href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download">page</a>.</p>
 
 <p>Then you just have to use the following script:</p>
 
