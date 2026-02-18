@@ -8,9 +8,9 @@
 
 **[Presentation #1 ][p1]**  
 
-  [p1]: 1_Turb_2025.pdf
+  [p1]: 1_Turb_2026.pdf
 
-
+<!---
  
 **[Presentation #2 ][p2]**  
 
@@ -21,12 +21,13 @@
 
   [p3]: 3_Turb_2025.pdf
 
-
+--->
 
 ##  Activity
 
 
 
+<!---
 **[Chaos ][ac11]**  
 
   [ac11]: chaos.ipynb
@@ -76,7 +77,7 @@
 
   [ac8]: https://drive.google.com/file/d/1lfPnSqDk0GsiwOSZTorUdY2p6q6hiJyw/view?usp=share_link  
   
-
+--->
 
 
 ##  Articles for project
