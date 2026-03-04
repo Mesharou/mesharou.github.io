@@ -67,7 +67,8 @@
 
   [ac6]: https://github.com/Mesharou/mesharou.github.io/blob/master/Turb/activity2_example.ipynb 
   
-  
+--->
+
 **[GS for turb.nc ][ac7]**  
 
   [ac7]: https://drive.google.com/file/d/1CBa2aUdXkm2LdIXtD_taXTmqUkr-B0eF/view?usp=share_link
@@ -76,7 +77,7 @@
 
   [ac8]: https://drive.google.com/file/d/1lfPnSqDk0GsiwOSZTorUdY2p6q6hiJyw/view?usp=share_link  
   
---->
+
 
 
 ##  Articles for project
