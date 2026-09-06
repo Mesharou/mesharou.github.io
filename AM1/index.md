@@ -2,7 +2,7 @@
 
 #  Applied Mathematics
 
-
+<!---
 ##  Course
 
 
@@ -10,13 +10,16 @@
 
   [c1]: POLY_AM1_2526.pdf
   
-  
+-->
+
 ##  Activities (TD)
 
 
-**[td #1 ][a1]** and **[solution][s1]**
+**[td #1 ][a1]**
 
-  [a1]: TD1_AM1_2526.pdf
+  [a1]: TD1_AM1_2627.pdf
+  
+<!---
   [s1]: TD1_AM1_2526_Solution.pdf 
   
   
@@ -25,7 +28,7 @@
 
   [a2]: TD2_AM1_2526.pdf
   [s2]: TD2_AM1_2526_Solution.pdf 
-  
+-->
   
   
   
