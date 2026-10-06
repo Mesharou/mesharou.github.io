@@ -14,7 +14,6 @@
 
   [p2]: Coastal2_2026.pdf
   
-<!---
 
 **[Presentation #3 ][p3]**  
 
@@ -26,10 +25,13 @@
   
 **[Presentation #5 ][p5]**  
 
-  [p5]: Coastal4_2026.pdf
+  [p5]: Coastal5_2026.pdf
 
--->
- 
+**[Presentation #6 ][p6]**  
+
+  [p6]: Coastal7_2026.pdf
+  
+  
 ##  Exercises
 
 
@@ -37,28 +39,27 @@
 
   [a1]: td1.pdf
   
-<!---
+
 **[Activity #1 - correction][c1]**  
 
   [c1]: td1_long_solutions.pdf
-  -->
+
 
 **[Activity #2 ][a2]**  
 
   [a2]: td2.pdf
-<!---
+
 **[Activity #2 - correction][c2]**  
 
   [c2]: td2_long_solutions.pdf
-  -->
+
   
 **[Activity #3 ][a3]**  
 
   [a3]: td3.pdf
   
-<!---
+
 **[Activity #3 - correction][c3]**  
 
   [c3]: td3_long_solutions.pdf
   
-  -->
