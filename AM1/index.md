@@ -19,10 +19,11 @@
 
   [a1]: TD1_AM1_2627.pdf
   
+
+  [s1]: TD1_AM1_2627_Solution.pdf 
+  
 <!---
-  [s1]: TD1_AM1_2526_Solution.pdf 
-  
-  
+
 **[td #2 ][a2]** and **[solution][s2]**
 
 

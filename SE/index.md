@@ -4,7 +4,7 @@
 
 ##  Presentations
 
-
+<!---
 **[#1 Introduction ][c1]**  
 
   [c1]: Cours/1_introduction.pdf
@@ -13,8 +13,7 @@
 **[#2 Scientific Paper ][c2]**  
 
   [c2]: Cours/2_Scientific_paper.pdf
-  
-<!---
+
 
 **[#3 Scientific Report ][c3]**  
 
