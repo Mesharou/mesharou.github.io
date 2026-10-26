@@ -24,8 +24,9 @@
 **[td #2 ][a2]**
 
 
-  [a2]: TD2_AM1_2526.pdf
-  [as2]: TD2_AM1_2526_Solution.pdf 
+  [a2]: TD2_AM1_2627.pdf
+  
+  [as2]: TD2_AM1_2627_Solution.pdf 
 
   
 
