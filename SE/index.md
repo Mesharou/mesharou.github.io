@@ -4,11 +4,12 @@
 
 ##  Presentations
 
-<!---
+
 **[#1 Introduction ][c1]**  
 
   [c1]: Cours/1_introduction.pdf
   
+<!---
 
 **[#2 Scientific Paper ][c2]**  
 
