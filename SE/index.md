@@ -139,6 +139,7 @@
 
 ###  Articles
 
+**[NaveiraGarabatoetal25.pdf][p28]**
 
 **[Milleretal26.pdf][p27]**
 
@@ -146,6 +147,8 @@
 
   [p26]: Kobaketal25.pdf
   [p27]: Milleretal26.pdf 
+  [p28]: NaveiraGarabatoetal25.pdf
+  
   
 <!---
 
