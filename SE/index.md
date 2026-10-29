@@ -9,6 +9,10 @@
 
   [c1]: Cours/1_introduction.pdf
   
+**[#1 Introduction suite][c1bis]**  
+
+  [c1bis]: Cours/1_introduction_part2.pdf
+  
 <!---
 
 **[#2 Scientific Paper ][c2]**  
