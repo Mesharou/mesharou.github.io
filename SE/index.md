@@ -13,11 +13,12 @@
 
   [c1bis]: Cours/1_introduction_part2.pdf
   
-<!---
 
 **[#2 Scientific Paper ][c2]**  
 
   [c2]: Cours/2_Scientific_paper.pdf
+
+<!---
 
 
 **[#3 Scientific Report ][c3]**  
@@ -143,6 +144,10 @@
 
 ###  Articles
 
+**[Larsenetal26.pdf][p30]**
+
+**[Aluieetal26.pdf][p29]**
+
 **[NaveiraGarabatoetal25.pdf][p28]**
 
 **[Milleretal26.pdf][p27]**
@@ -152,7 +157,8 @@
   [p26]: Kobaketal25.pdf
   [p27]: Milleretal26.pdf 
   [p28]: NaveiraGarabatoetal25.pdf
-  
+  [p29]: Aluieetal26.pdf 
+  [p30]: Larsenetal26.pdf
   
 <!---
 
